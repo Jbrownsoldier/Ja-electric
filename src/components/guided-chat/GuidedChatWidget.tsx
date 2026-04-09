@@ -191,9 +191,9 @@ export function GuidedChatWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.96 }}
             transition={{ duration: 0.22, ease: 'easeOut' }}
-            className="fixed right-4 md:right-6 bottom-[6rem] md:bottom-24 z-[70] w-[calc(100vw-2rem)] max-w-[24rem] rounded-2xl border border-secondary/30 bg-surface-container-low shadow-[0_30px_80px_rgba(0,0,0,0.48)] overflow-hidden"
+            className="fixed inset-x-4 top-4 bottom-[calc(6rem+env(safe-area-inset-bottom,0px))] md:inset-x-auto md:top-auto md:right-6 md:bottom-24 z-[70] w-auto md:w-[calc(100vw-3rem)] md:max-w-[24rem] rounded-2xl border border-secondary/30 bg-surface-container-low shadow-[0_30px_80px_rgba(0,0,0,0.48)] overflow-hidden flex flex-col"
           >
-            <div className="border-b border-white/5 bg-slate-950/70 px-4 py-4">
+            <div className="sticky top-0 z-10 border-b border-white/5 bg-slate-950/95 px-4 py-4 backdrop-blur-xl">
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-start gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-secondary/15 border border-secondary/25 text-secondary">
@@ -218,7 +218,7 @@ export function GuidedChatWidget() {
               </div>
             </div>
 
-            <div ref={scrollRef} className="max-h-[58vh] overflow-y-auto px-4 py-4 space-y-3 bg-primary/70">
+            <div ref={scrollRef} className="flex-1 min-h-0 overflow-y-auto px-4 py-4 space-y-3 bg-primary/70">
               {transcript.map((entry) => (
                 <div
                   key={entry.id}
