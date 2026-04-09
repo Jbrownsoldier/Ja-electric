@@ -20,7 +20,7 @@ export const company = {
   masterElectricians: 'Licensed Electricians',
   warranty: 'Quality & Safety Focused',
   logo: '/ja-electric-logo.png',
-  aboutImage: '/branded-service-van.png',
+  aboutImage: '/20161006_175048jpg.jpg',
   ogImage: '/ja-electric-logo.png',
   founded: '2010',
   award: 'Super Service Award',
