@@ -2,7 +2,7 @@ import { Clock, ShieldCheck, BadgeCheck, Search, Building2, DollarSign } from 'l
 
 const items = [
  { icon: Clock, label: '24-Hour Phone Service', microcopy: 'Quick turnaround for urgent needs' },
- { icon: ShieldCheck, label: '2 Master Electricians', microcopy: 'Experienced local leadership' },
+ { icon: ShieldCheck, label: 'Licensed Electricians', microcopy: 'Experienced local leadership' },
  { icon: BadgeCheck, label: 'Preventative Maintenance', microcopy: 'Built for long-term reliability' },
  { icon: Search, label: 'Root-Cause Diagnosis', microcopy: 'Power quality and fault tracing' },
  { icon: Building2, label: 'All Property Types', microcopy: 'Industrial to residential' },
@@ -27,7 +27,7 @@ export function TroubleTrustBar() {
  <item.icon className="w-5 h-5 text-secondary"strokeWidth={1.75} />
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm leading-snug">{item.label}</p>
+ <p className="font-semibold text-white text-sm leading-snug">{item.label}</p>
  <p className="text-gray-500 text-xs mt-0.5 leading-snug">{item.microcopy}</p>
  </div>
  </div>

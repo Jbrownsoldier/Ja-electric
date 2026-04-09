@@ -1,12 +1,12 @@
 import { ShieldCheck, BadgeCheck, Clock, ClipboardList, Building2, Star } from 'lucide-react';
 
 const items = [
- { icon: ShieldCheck, label: '2 Master Electricians', microcopy: 'Experienced commercial leadership' },
- { icon: BadgeCheck, label: 'Five-Year Warranty', microcopy: 'Parts and labour support' },
+ { icon: ShieldCheck, label: 'Licensed Electricians', microcopy: 'Experienced commercial leadership' },
+ { icon: BadgeCheck, label: 'Quality Focused', microcopy: 'Safe, reliable work' },
  { icon: Clock, label: 'Maintenance Contracts', microcopy: 'Ongoing client support' },
  { icon: ClipboardList, label: 'Build-to-Suit Projects', microcopy: 'Start-to-finish delivery' },
  { icon: Building2, label: 'Commercial & Institutional', microcopy: 'Retail to daycares and more' },
- { icon: Star, label: 'Southern Alberta Coverage', microcopy: 'Lethbridge-based team' },
+ { icon: Star, label: 'Regional Coverage', microcopy: 'Steinbach-based team' },
 ];
 
 export function CommercialTrustBar() {
@@ -27,7 +27,7 @@ export function CommercialTrustBar() {
  <item.icon className="w-5 h-5 text-secondary"strokeWidth={1.75} />
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm leading-snug">{item.label}</p>
+ <p className="font-semibold text-white text-sm leading-snug">{item.label}</p>
  <p className="text-gray-500 text-xs mt-0.5 leading-snug">{item.microcopy}</p>
  </div>
  </div>

@@ -5,16 +5,16 @@ const types = [
  icon: Home,
  badge: 'Residential',
  heading: 'Home Electrical Service & Upgrades',
- body: `Banda Electric works on the everyday electrical needs that keep homes running:
+ body: `JA Electric works on the everyday electrical needs that keep homes running:
  service calls, lighting, new receptacles, equipment wiring, upgrades, and careful
  troubleshooting when something is not performing the way it should.`,
- points: ['Repairs, service work, and upgrades', 'Lighting, plugs, and new circuits', 'Quick estimating from senior staff'],
+ points: ['Repairs, service work, and upgrades', 'Lighting, plugs, and new circuits', 'Smart homes, generators, and surge protection'],
  },
  {
  icon: Building2,
  badge: 'Acreage & Renovation',
  heading: 'Garages, Shops, Acreages & Renovations',
- body: `When a project stretches beyond the main house, Banda Electric helps plan and wire
+ body: `When a project stretches beyond the main house, JA Electric helps plan and wire
  the spaces around it too, from detached garages and rural outbuildings to
  renovation rough-ins and outdoor electrical distribution.`,
  points: ['Detached building and garage power', 'Renovation and addition wiring', 'Outdoor and acreage-ready solutions'],
@@ -29,12 +29,12 @@ export function EVIntro() {
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
  What We Install
  </p>
- <h2 className="text-primary mb-4">
+ <h2 className="text-white mb-4">
  Residential Electrical, Done Right
  </h2>
  <p className="text-gray-500 text-lg leading-relaxed">
  Whether you need service in the house, support for a renovation, or power for a
- garage or acreage structure, Banda Electric fits the work into a clean, reliable scope.
+ garage or acreage structure, JA Electric fits the work into a clean, reliable scope.
  </p>
  </div>
 
@@ -61,14 +61,14 @@ function IntroCard({ icon: Icon, badge, heading, body, points }: IntroCardProps)
  <div className="group bg-surface rounded-2xl shadow-ambient hover:shadow-ambient hover:-translate-y-1 transition-all duration-300 p-8 flex flex-col">
  <div className="flex items-start justify-between gap-4 mb-6">
  <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center group-hover:bg-secondary transition-colors duration-300 shrink-0">
- <Icon className="w-6 h-6 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-6 h-6 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
  <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">
  {badge}
  </span>
  </div>
 
- <h3 className="text-primary font-bold text-xl mb-3">{heading}</h3>
+ <h3 className="text-white font-bold text-xl mb-3">{heading}</h3>
  <p className="text-gray-500 text-base leading-relaxed mb-6 flex-1">{body}</p>
 
  <ul className="space-y-2.5 mb-6 pt-6">

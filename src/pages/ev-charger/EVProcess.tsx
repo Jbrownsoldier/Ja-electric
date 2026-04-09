@@ -6,7 +6,7 @@ const steps = [
  number: '01',
  title: 'Tell Us About the Job',
  description:
-"Tell Banda Electric what kind of residential work you need, where the project is, and anything important about the home, garage, acreage, or timing.",
+"Tell JA Electric what kind of residential work you need, where the project is, and anything important about the home, garage, acreage, or timing.",
  },
  {
  icon: ClipboardCheck,
@@ -27,14 +27,14 @@ const steps = [
  number: '04',
  title: 'Scheduled Work',
  description:
-"Once approved, Banda Electric schedules the work and completes the installation, upgrade, or repair with a clean process and clear communication.",
+"Once approved, JA Electric schedules the work and completes the installation, upgrade, or repair with a clean process and clear communication.",
  },
  {
  icon: BadgeCheck,
  number: '05',
  title: 'Completion & Follow-Through',
  description:
-"The job is wrapped up with the same quality-first mindset it started with, and Banda Electric stands behind the work with ongoing support and a five-year warranty.",
+"The job is wrapped up with the same quality-first mindset it started with, and JA Electric stands behind the work with ongoing support and clear communication.",
  },
 ];
 
@@ -66,7 +66,7 @@ export function EVProcess() {
  </div>
 
  <div className="flex flex-col sm:flex-row items-center gap-4 pt-8">
- <button className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary text-primary font-semibold px-7 py-4 rounded-xl transition-all duration-200 hover:shadow-[0_4px_20px_rgba(246,255,3,0.22)] group">
+ <button className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary text-slate-50 font-semibold px-7 py-4 rounded-xl transition-all duration-200 hover:shadow-[0_4px_20px_rgba(18,146,232,0.24)] group">
  Start Your Quote
  <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5"/>
  </button>
@@ -92,7 +92,7 @@ function ProcessStep({ icon: Icon, number, title, description, isLast }: Process
  <div className="group relative flex gap-6 md:gap-8 p-6 md:p-8 rounded-2xl hover:border-secondary/30 hover:bg-white/[0.03] transition-all duration-300">
  <div className="flex flex-col items-center shrink-0">
  <div className="w-12 h-12 rounded-xl bg-secondary/10 group-hover:bg-secondary flex items-center justify-center transition-colors duration-300">
- <Icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-5 h-5 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
  {!isLast && (
  <div className="w-px flex-1 mt-4 bg-white/10 min-h-[20px]"/>

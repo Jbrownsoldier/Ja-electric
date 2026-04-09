@@ -4,8 +4,8 @@ import { Activity, Zap } from 'lucide-react';
 
 const regions = [
   {
-    id: 'lethbridge',
-    name: 'Lethbridge (HQ)',
+    id: 'steinbach',
+    name: 'Steinbach (HQ)',
     path: 'M 150,100 L 250,100 L 300,180 L 200,250 L 100,180 Z',
     nodePos: { x: 200, y: 170 },
     status: 'Operational',
@@ -13,8 +13,8 @@ const regions = [
     color: 'fill-secondary/20 hover:fill-secondary/40'
   },
   {
-    id: 'coaldale',
-    name: 'Coaldale (SEC-1)',
+    id: 'winnipeg',
+    name: 'Winnipeg',
     path: 'M 200,250 L 300,180 L 400,250 L 350,350 L 250,350 Z',
     nodePos: { x: 300, y: 280 },
     status: 'Standby',
@@ -22,8 +22,8 @@ const regions = [
     color: 'fill-slate-800/40 hover:fill-secondary/30'
   },
   {
-    id: 'coalhurst',
-    name: 'Coalhurst (SEC-2)',
+    id: 'brandon',
+    name: 'Brandon',
     path: 'M 100,180 L 200,250 L 250,350 L 150,400 L 50,300 Z',
     nodePos: { x: 150, y: 290 },
     status: 'Active',
@@ -31,8 +31,8 @@ const regions = [
     color: 'fill-slate-800/40 hover:fill-secondary/30'
   },
   {
-    id: 'taber',
-    name: 'Taber (SEC-3)',
+    id: 'selkirk',
+    name: 'Selkirk',
     path: 'M 300,180 L 450,150 L 550,220 L 500,320 L 400,250 Z',
     nodePos: { x: 420, y: 220 },
     status: 'Standby',
@@ -47,7 +47,7 @@ export function InteractiveMap() {
   return (
     <div className="relative w-full h-full min-h-[500px] flex items-center justify-center bg-primary/20 rounded-xl overflow-hidden border border-white/5">
       {/* Background Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(246,255,3,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(246,255,3,0.02)_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(18,146,232,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(18,146,232,0.04)_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none"></div>
 
       {/* Radar Sweep Container */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
@@ -64,7 +64,7 @@ export function InteractiveMap() {
       {/* Main SVG Map */}
       <svg 
         viewBox="0 0 600 500" 
-        className="relative z-10 w-full max-w-[800px] h-auto drop-shadow-[0_0_30px_rgba(246,255,3,0.05)]"
+        className="relative z-10 w-full max-w-[800px] h-auto drop-shadow-[0_0_30px_rgba(18,146,232,0.1)]"
       >
         <defs>
           <filter id="glow">
@@ -89,7 +89,7 @@ export function InteractiveMap() {
               opacity: 1, 
               scale: 1,
               strokeWidth: hoveredRegion === region.id ? 2 : 1,
-              stroke: hoveredRegion === region.id ? '#F6FF03' : 'rgba(255,255,255,0.1)'
+              stroke: hoveredRegion === region.id ? '#1292e8' : 'rgba(255,255,255,0.1)'
             }}
           />
         ))}
@@ -157,9 +157,9 @@ export function InteractiveMap() {
 
         <defs>
           <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(246,255,3,0)" />
-            <stop offset="50%" stopColor="rgba(246,255,3,0.5)" />
-            <stop offset="100%" stopColor="rgba(246,255,3,0)" />
+            <stop offset="0%" stopColor="rgba(18,146,232,0)" />
+            <stop offset="50%" stopColor="rgba(18,146,232,0.5)" />
+            <stop offset="100%" stopColor="rgba(18,146,232,0)" />
           </linearGradient>
         </defs>
       </svg>
@@ -221,7 +221,7 @@ export function InteractiveMap() {
         >
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-secondary animate-ping"></div>
-            <span className="text-white font-headline text-[10px] font-black uppercase tracking-[0.2em]">Southern Alberta Coverage Active</span>
+            <span className="text-white font-headline text-[10px] font-black uppercase tracking-[0.2em]">Regional Coverage Active</span>
           </div>
         </motion.div>
       )}

@@ -8,7 +8,7 @@ const navLinks = [
   { label: 'Services', path: '/services' },
   { label: 'Coverage', path: '/areas' },
   { label: 'About', path: '/about' },
-  { label: 'Highlights', path: '/reviews' },
+  { label: 'Why JA', path: '/reviews' },
   { label: 'Contact', path: '/contact' },
 ];
 
@@ -50,7 +50,7 @@ export function Navigation() {
     <>
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'border-b border-white/[0.06] shadow-[0_1px_0_rgba(246,255,3,0.14),0_8px_32px_rgba(0,0,0,0.4)]'
+          ? 'border-b border-white/[0.06] shadow-[0_1px_0_rgba(18,146,232,0.16),0_8px_32px_rgba(0,0,0,0.4)]'
           : 'bg-transparent border-transparent'
       }`} style={isScrolled ? { background: 'rgba(11,11,11,0.84)', backdropFilter: 'blur(24px) saturate(180%)', WebkitBackdropFilter: 'blur(24px) saturate(180%)' } : {}}>
         <div className="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 md:py-4 max-w-7xl mx-auto gap-3">
@@ -62,13 +62,13 @@ export function Navigation() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }
             }}
-            className="flex items-center gap-1 rounded-md bg-white/95 px-2.5 sm:px-3 py-1.5 sm:py-2 shadow-[0_8px_24px_rgba(0,0,0,0.22)] ring-1 ring-white/20 backdrop-blur-sm hover:bg-white transition-colors shrink-0"
+            className="flex items-center gap-1 rounded-md px-1 sm:px-1.5 py-1 shrink-0 transition-opacity hover:opacity-95"
             aria-label={`${company.name} Home`}
           >
             <img
               src={company.logo}
               alt={`${company.name} Logo`}
-              className="h-10 sm:h-11 md:h-14 w-auto object-contain"
+              className="h-10 sm:h-11 md:h-14 w-auto object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.28)]"
               loading="eager"
               width="180"
               height="40"
@@ -97,7 +97,7 @@ export function Navigation() {
             </a>
             <button 
               onClick={openQuoteModal}
-              className="btn-magnetic px-6 py-2 bg-secondary text-primary font-headline font-bold uppercase text-xs tracking-widest rounded shadow-sm"
+              className="btn-magnetic px-6 py-2 bg-secondary text-slate-50 font-headline font-bold uppercase text-xs tracking-widest rounded shadow-sm"
             >
               Request Quote
             </button>
@@ -153,7 +153,7 @@ export function Navigation() {
                 setIsMobileMenuOpen(false);
                 openQuoteModal();
               }}
-              className="w-full py-4 bg-secondary text-primary font-headline font-bold uppercase text-sm tracking-widest rounded flex justify-center items-center"
+              className="w-full py-4 bg-secondary text-slate-50 font-headline font-bold uppercase text-sm tracking-widest rounded flex justify-center items-center"
             >
               Request Quote
             </button> */}

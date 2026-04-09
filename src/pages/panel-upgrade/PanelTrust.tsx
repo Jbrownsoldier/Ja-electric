@@ -4,11 +4,11 @@ import { company } from '../../config/company';
 const differentiators = [
  {
  icon: ShieldCheck,
- text: 'Two master electricians and a highly qualified support team with deep industrial field experience',
+ text: 'Licensed electricians and an experienced support team with practical field experience across specialty projects',
  },
  {
  icon: Clock,
- text: '40+ years of combined experience across industrial, commercial, agricultural, and specialty projects',
+ text: 'Serving customers since 2010 across residential, commercial, agricultural, maintenance, and specialty projects',
  },
  {
  icon: Award,
@@ -24,15 +24,15 @@ const differentiators = [
  },
  {
  icon: MapPin,
- text: 'Lethbridge-based coverage for Southern Alberta facilities that need a dependable long-term electrical partner',
+ text: 'Steinbach-based coverage for properties across the surrounding region that need a dependable long-term electrical partner',
  },
 ];
 
 const stats = [
- { value: '2', label: 'Master Electricians' },
- { value: '40+', label: 'Years Combined' },
+ { value: '2010', label: 'Established' },
+ { value: 'Yes', label: 'Licensed Team' },
  { value: '24-Hr', label: 'Phone Service' },
- { value: '5-Yr', label: 'Warranty' },
+ { value: 'Award', label: 'Service Focus' },
 ];
 
 export function PanelTrust() {
@@ -42,13 +42,13 @@ export function PanelTrust() {
  <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
  <div>
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
- Why Choose Banda Electric
+ Why Choose JA Electric
  </p>
- <h2 className="text-primary mb-5">
- Built for Complex Electrical Work Across Southern Alberta
+ <h2 className="text-white mb-5">
+ Built for Complex Electrical Work Across the Region
  </h2>
  <p className="text-gray-500 text-lg leading-relaxed mb-10">
- Banda Electric positions itself as a local contractor that can create,
+ JA Electric positions itself as a local contractor that can create,
  streamline, upgrade, maintain, and repair electrical operations without losing
  sight of quality, safety, or long-term reliability.
  </p>
@@ -72,11 +72,11 @@ export function PanelTrust() {
  <div className="bg-primary rounded-3xl p-8 md:p-10 shadow-ambient">
  <div className="flex items-center gap-3 mb-8">
  <div className="w-11 h-11 rounded-xl bg-secondary flex items-center justify-center shrink-0">
- <Zap className="w-5 h-5 text-primary"/>
+ <Zap className="w-5 h-5 text-slate-50"/>
  </div>
  <div>
  <p className="text-white font-semibold text-base">{company.name}</p>
- <p className="text-gray-400 text-sm">Lethbridge & Southern Alberta</p>
+ <p className="text-gray-400 text-sm">Steinbach & Surrounding Region</p>
  </div>
  </div>
 
@@ -96,9 +96,9 @@ export function PanelTrust() {
 
  <div className="pt-7 space-y-3 mb-8">
  {[
- 'Locally owned and operated in Lethbridge',
+ 'Locally based in Steinbach',
  'Construction, maintenance, and emergency repair',
- 'Five-year warranty on supported work',
+ 'Quality-focused workmanship on supported work',
  'Airport, industrial, agricultural, and commercial experience',
  ].map((point) => (
  <div key={point} className="flex items-center gap-3">
@@ -108,7 +108,7 @@ export function PanelTrust() {
  ))}
  </div>
 
- <button className="w-full bg-secondary hover:bg-secondary text-primary font-semibold rounded-xl py-3.5 px-6 transition-colors duration-200 text-sm tracking-wide">
+ <button className="w-full bg-secondary hover:bg-secondary text-slate-50 font-semibold rounded-xl py-3.5 px-6 transition-colors duration-200 text-sm tracking-wide">
  Request a Quote Today
  </button>
  </div>

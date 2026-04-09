@@ -6,7 +6,7 @@ const trustItems = [
  { icon: ShieldCheck, label: 'Agricultural Experience' },
  { icon: ClipboardList, label: 'Design-Build Support' },
  { icon: Home, label: 'Maintenance & Repair' },
- { icon: Award, label: '40+ Years Combined' },
+ { icon: Award, label: 'Established 2010' },
 ];
 
 export function RewiringHero() {
@@ -18,7 +18,7 @@ export function RewiringHero() {
  <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
  <div className="order-2 lg:order-1">
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm md:text-base mb-4">
- Agricultural Electrical · Lethbridge &amp; Southern Alberta
+ Agricultural Electrical · Steinbach &amp; Surrounding Region
  </p>
 
  <h1 className="text-white mb-6">
@@ -27,7 +27,7 @@ export function RewiringHero() {
 
  <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
  From highly sophisticated seed plants to feed mills and expanding agricultural
- facilities, Banda Electric supports Southern Alberta operations with practical
+ facilities, JA Electric supports regional operations with practical
  electrical work that spans maintenance, design-build planning, and system
  upgrades tailored to the way the site actually runs.
  </p>
@@ -78,7 +78,7 @@ function RewiringHeroVisual() {
  <div className="flex items-center justify-between mb-4">
  <div className="flex items-center gap-3">
  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
- <Home className="w-6 h-6 text-primary"/>
+ <Home className="w-6 h-6 text-slate-50"/>
  </div>
  <div>
  <p className="text-white font-semibold">Agricultural Electrical</p>
@@ -87,7 +87,7 @@ function RewiringHeroVisual() {
  </div>
  <span className="flex items-center gap-1.5 px-3 py-1.5 bg-secondary/15 rounded-full border border-secondary/20">
  <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"/>
- <span className="text-secondary text-xs font-semibold">Southern Alberta</span>
+ <span className="text-secondary text-xs font-semibold">Regional Coverage</span>
  </span>
  </div>
  <div className="flex gap-2 flex-wrap">
@@ -125,11 +125,11 @@ function RewiringHeroVisual() {
  <div className="flex items-center justify-between p-4 bg-surface-container-low rounded-xl">
  <div>
  <p className="text-gray-500 text-sm">Master Electricians</p>
- <p className="font-bold text-gray-900 text-xl mt-0.5">2</p>
+ <p className="font-bold text-white text-xl mt-0.5">2</p>
  </div>
  <div className="text-right">
  <p className="text-gray-500 text-sm">Warranty</p>
- <p className="font-bold text-gray-900 text-xl mt-0.5">5-Year</p>
+ <p className="font-bold text-white text-xl mt-0.5">5-Year</p>
  </div>
  </div>
  </div>
@@ -141,8 +141,8 @@ function RewiringHeroVisual() {
  <ClipboardList className="w-5 h-5 text-secondary"/>
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm">Local Coverage</p>
- <p className="text-gray-500 text-xs">Serving Southern Alberta farms</p>
+ <p className="font-semibold text-white text-sm">Local Coverage</p>
+ <p className="text-gray-500 text-xs">Serving farms across the region</p>
  </div>
  </div>
  </div>

@@ -5,42 +5,42 @@ const faqs = [
  {
  question: 'What types of commercial properties do you work on?',
  answer:
-"Banda Electric describes its commercial and industrial experience broadly, including shopping malls, long-term living facilities, daycares, manufacturing units, and other demanding properties that need dependable electrical support.",
+"JA Electric supports a wide range of commercial properties that need dependable electrical installations, maintenance, and project support.",
  },
  {
  question: 'Do you handle maintenance contracts as well as new builds?',
  answer:
-"Yes. The Banda Electric services page says the team supports clients from maintenance contracts to new build and build-to-suit projects, with a start-to-finish approach that protects schedules and quality.",
+"Yes. JA Electric supports clients from maintenance work to new build and design-build style commercial scopes, with a start-to-finish approach that protects schedules and quality.",
  },
  {
- question: 'What kinds of commercial systems does Banda Electric support?',
+ question: 'What kinds of commercial systems does JA Electric support?',
  answer:
-"Banda Electric supports power distribution, specialty lighting, parking lighting, life-safety systems, maintenance, and repair as part of its broader commercial and industrial service mix.",
+"JA Electric supports installations, maintenance, upgrades, lighting, repairs, and practical electrical solutions for commercial properties.",
  },
  {
  question: 'Can you take on complete start-to-finish commercial projects?',
  answer:
-"Yes. Banda Electric provides a full start-to-finish experience for commercial clients, from maintenance contracts through larger build-to-suit and new-build scopes.",
+"Yes. JA Electric provides a full start-to-finish experience for commercial clients, from maintenance support through larger new-build and project scopes.",
  },
  {
  question: 'Do you support urgent commercial service needs?',
  answer:
-"Yes. Banda Electric notes that its 24-hour phone service is intended to guarantee quick turnaround, especially for emergencies, which makes that promise relevant for commercial support as well.",
+"Yes. JA Electric advertises 24-hour service and quick turnaround for urgent commercial electrical issues.",
  },
  {
- question: 'Do you only work in Lethbridge?',
+ question: 'Do you only work in Steinbach?',
  answer:
-"No. Banda Electric is based in Lethbridge and serves Southern Alberta, including commercial clients in surrounding communities that need local project and service support.",
+"No. JA Electric is based in Steinbach and serves a broad regional area, including commercial clients in surrounding communities that need local project and service support.",
  },
  {
  question: 'How are commercial projects quoted?',
  answer:
-"The Banda Electric contact page says a senior team member prepares detailed quotes with attention to the best configurations, equipment choices, and the most cost-effective use and maintenance of the electrical system.",
+"JA Electric reviews the site, the scope, and the best-fit solution so the quote reflects the real project requirements.",
  },
  {
- question:"What sets Banda Electric apart for commercial work?",
+ question:"What sets JA Electric apart for commercial work?",
  answer:
-"Banda Electric stands out through local ownership, two master electricians, high standards for installation and maintenance, a five-year warranty, and a safety-first culture.",
+"JA Electric stands out through licensed electricians, responsive service, practical planning, and a strong commitment to quality, safety, and customer satisfaction.",
  },
 ];
 
@@ -58,12 +58,12 @@ export function CommercialFAQ() {
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
  FAQ
  </p>
- <h2 className="text-primary mb-4">
+ <h2 className="text-white mb-4">
  Commercial Electrical Questions, Answered
  </h2>
  <p className="text-gray-500 text-lg leading-relaxed">
  What commercial owners, operators, and project teams most often ask before
- engaging Banda Electric.{' '}
+ engaging JA Electric.{' '}
  <button className="text-secondary font-semibold hover:underline underline-offset-2">
  Contact us
  </button>{' '}
@@ -104,7 +104,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
  >
  <span
  className={`text-sm md:text-[0.9375rem] font-semibold transition-colors duration-200 ${
- isOpen ? 'text-secondary' : 'text-primary group-hover:text-secondary'
+ isOpen ? 'text-secondary' : 'text-white group-hover:text-secondary'
  }`}
  >
  {question}
@@ -112,7 +112,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
  <span
  className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center border transition-all duration-200 ${
  isOpen
- ? 'bg-secondary border-secondary text-primary'
+ ? 'bg-secondary border-secondary text-slate-50'
  : 'bg-surface border-outline-variant/15 text-gray-400 group-hover:border-secondary group-hover:text-secondary'
  }`}
  >

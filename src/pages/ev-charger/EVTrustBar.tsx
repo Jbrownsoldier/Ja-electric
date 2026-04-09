@@ -1,12 +1,12 @@
 import { ShieldCheck, BadgeCheck, Clock, FileCheck, BatteryCharging, MapPin } from 'lucide-react';
 
 const items = [
- { icon: ShieldCheck, label: 'Lethbridge Owned', microcopy: 'Local contractor' },
- { icon: BadgeCheck, label: 'Five-Year Warranty', microcopy: 'Work backed by Banda' },
- { icon: Clock, label: '40+ Years Combined', microcopy: 'Experienced team' },
+ { icon: ShieldCheck, label: 'Steinbach Based', microcopy: 'Local contractor' },
+ { icon: BadgeCheck, label: 'Quality Focused', microcopy: 'Safe, reliable work' },
+ { icon: Clock, label: 'Established 2010', microcopy: 'Experienced team' },
  { icon: FileCheck, label: 'Quick Estimating', microcopy: 'Senior quote review' },
  { icon: BatteryCharging, label: 'Homes & Acreages', microcopy: 'Residential support' },
- { icon: MapPin, label: 'Southern Alberta', microcopy: 'Lethbridge based crew' },
+ { icon: MapPin, label: '300 km Coverage', microcopy: 'Steinbach based crew' },
 ];
 
 export function EVTrustBar() {
@@ -27,7 +27,7 @@ export function EVTrustBar() {
  <item.icon className="w-5 h-5 text-secondary"strokeWidth={1.75} />
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm leading-snug">{item.label}</p>
+ <p className="font-semibold text-white text-sm leading-snug">{item.label}</p>
  <p className="text-gray-500 text-xs mt-0.5 leading-snug">{item.microcopy}</p>
  </div>
  </div>

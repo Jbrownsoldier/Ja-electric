@@ -3,10 +3,10 @@ import { Button } from '../../components/Button';
 import { company } from '../../config/company';
 
 const trustItems = [
- { icon: Shield, label: 'Lethbridge Owned' },
+ { icon: Shield, label: 'Steinbach Based' },
  { icon: Home, label: 'Homes & Acreages' },
- { icon: Zap, label: '2 Master Electricians' },
- { icon: Clock, label: '40+ Years Combined' },
+ { icon: Zap, label: 'Licensed Electricians' },
+ { icon: Clock, label: 'Established 2010' },
 ];
 
 export function EVHero() {
@@ -18,17 +18,17 @@ export function EVHero() {
  <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
  <div className="order-2 lg:order-1">
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm md:text-base mb-4">
- Residential Electrical · Lethbridge &amp; Southern Alberta
+ Residential Electrical · Steinbach &amp; Surrounding Region
  </p>
 
  <h1 className="text-white mb-6">
- Residential Electrical by Local Master Electricians
+ Residential Electrical by Local Licensed Electricians
  </h1>
 
  <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
- From service calls and lighting upgrades to renovations, garages, and acreage
- electrical work, Banda Electric delivers practical residential solutions with a
- fast response and an eye for quality.
+ From service calls and lighting upgrades to renovations, garages, smart home
+ work, generators, and acreage electrical needs, JA Electric delivers practical
+ residential solutions with a fast response and an eye for quality.
  </p>
 
  <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -72,7 +72,7 @@ function EVHeroVisual() {
  <div className="flex items-center justify-between mb-4">
  <div className="flex items-center gap-3">
  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
- <BatteryCharging className="w-6 h-6 text-primary"/>
+ <BatteryCharging className="w-6 h-6 text-slate-50"/>
  </div>
  <div>
  <p className="text-white font-semibold">Residential Electrical</p>
@@ -100,13 +100,13 @@ function EVHeroVisual() {
  <div className="p-6 space-y-3">
  <div className="grid grid-cols-3 gap-3">
  {[
- { label: 'Master Electricians', value: '2' },
- { label: 'Warranty', value: '5 Years' },
- { label: 'Experience', value: '40+' },
+ { label: 'Licensed Team', value: 'Yes' },
+ { label: 'Service', value: '24-Hr' },
+ { label: 'Experience', value: '2010' },
  ].map((stat) => (
  <div key={stat.label} className="bg-surface-container-low rounded-xl p-3 text-center">
- <p className="font-bold text-gray-900 text-base">{stat.value}</p>
- <p className="text-gray-500 text-xs mt-0.5 leading-snug">{stat.label}</p>
+ <p className="font-bold text-white text-base">{stat.value}</p>
+ <p className="text-gray-400 text-xs mt-0.5 leading-snug">{stat.label}</p>
  </div>
  ))}
  </div>
@@ -115,11 +115,11 @@ function EVHeroVisual() {
  {[
  'Residential service calls and repairs',
  'Renovations, garages, and outdoor power',
- 'Quotes prepared by a senior team member',
+ 'Smart home, generator, and surge protection support',
  ].map((point) => (
  <div key={point} className="flex items-center gap-3">
  <CheckCircle2 className="w-4 h-4 text-secondary shrink-0"strokeWidth={2} />
- <span className="text-gray-700 text-sm font-medium">{point}</span>
+ <span className="text-gray-200 text-sm font-medium">{point}</span>
  </div>
  ))}
  </div>
@@ -129,11 +129,11 @@ function EVHeroVisual() {
  <div className="flex items-center justify-between p-4 bg-surface-container-low rounded-xl">
  <div>
  <p className="text-gray-500 text-sm">Coverage</p>
- <p className="font-bold text-gray-900 text-xl mt-0.5">Southern AB</p>
+ <p className="font-bold text-white text-xl mt-0.5">300 km Area</p>
  </div>
  <div className="text-right">
  <p className="text-gray-500 text-sm">Response</p>
- <p className="font-bold text-gray-900 text-xl mt-0.5">Quick Turnaround</p>
+ <p className="font-bold text-white text-xl mt-0.5">Quick Turnaround</p>
  </div>
  </div>
  </div>
@@ -145,7 +145,7 @@ function EVHeroVisual() {
  <Shield className="w-5 h-5 text-secondary"/>
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm">Five-Year Warranty</p>
+ <p className="font-semibold text-white text-sm">Quality-Focused Service</p>
  <p className="text-gray-500 text-xs">Residential workmanship support</p>
  </div>
  </div>

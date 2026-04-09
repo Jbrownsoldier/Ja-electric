@@ -1,12 +1,12 @@
 import { ShieldCheck, BadgeCheck, Clock, FileCheck, CircuitBoard, MapPin } from 'lucide-react';
 
 const items = [
- { icon: ShieldCheck, label: '2 Master Electricians', microcopy: 'Highly trained local team' },
+ { icon: ShieldCheck, label: 'Licensed Electricians', microcopy: 'Highly trained local team' },
  { icon: BadgeCheck, label: 'Five-Year Warranty', microcopy: 'Parts and labour support' },
- { icon: Clock, label: '40+ Years Combined', microcopy: 'Experienced field leadership' },
+ { icon: Clock, label: 'Established 2010', microcopy: 'Experienced field leadership' },
  { icon: FileCheck, label: 'Preventative Maintenance', microcopy: 'Power quality and line location' },
  { icon: CircuitBoard, label: 'Emergency Repair', microcopy: 'Quick turnaround when it counts' },
- { icon: MapPin, label: 'Southern Alberta', microcopy: 'Lethbridge-based coverage' },
+ { icon: MapPin, label: 'Regional Coverage', microcopy: 'Steinbach-based coverage' },
 ];
 
 export function PanelTrustBar() {
@@ -27,7 +27,7 @@ export function PanelTrustBar() {
  <item.icon className="w-5 h-5 text-secondary"strokeWidth={1.75} />
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm leading-snug">{item.label}</p>
+ <p className="font-semibold text-white text-sm leading-snug">{item.label}</p>
  <p className="text-gray-500 text-xs mt-0.5 leading-snug">{item.microcopy}</p>
  </div>
  </div>

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://www.bandaelectric.com/sitemap.xml
+Sitemap: https://jaelectricinc.ca/sitemap.xml

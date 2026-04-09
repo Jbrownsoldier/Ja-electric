@@ -3,18 +3,18 @@ import { Globe, Mail, Phone } from 'lucide-react';
 import { company, companyLinks } from '../config/company';
 
 const serviceLinks = [
-  { label: 'Residential Electrical', to: '/ev-charger' },
-  { label: 'Industrial Electrical', to: '/panel-upgrade' },
-  { label: 'Maintenance & Repair', to: '/troubleshooting' },
-  { label: 'Agricultural Electrical', to: '/rewiring' },
-  { label: 'Commercial Electrical', to: '/commercial' },
+  { label: 'Residential Electrical', to: '/residential-electrical' },
+  { label: 'Specialty Electrical', to: '/specialty-electrical' },
+  { label: 'Maintenance & Repair', to: '/maintenance-repair' },
+  { label: 'Agricultural Electrical', to: '/agricultural-electrical' },
+  { label: 'Commercial Electrical', to: '/commercial-electrical' },
   { label: 'All Services', to: '/services' },
 ];
 
 const exploreLinks = [
   { label: 'Services', to: '/services' },
   { label: 'Service Areas', to: '/areas' },
-  { label: 'Highlights', to: '/reviews' },
+  { label: 'Why JA', to: '/reviews' },
   { label: 'About', to: '/about' },
   { label: 'Contact', to: '/contact' },
 ];
@@ -30,13 +30,13 @@ export function Footer() {
             <img
               src={company.logo}
               alt={`${company.name} Logo`}
-              className="h-16 w-auto object-contain mb-4 drop-shadow-[0_0_20px_rgba(246,255,3,0.14)]"
+              className="h-16 w-auto object-contain mb-4 drop-shadow-[0_0_20px_rgba(18,146,232,0.18)]"
               loading="lazy"
               width="250"
               height="60"
             />
           </Link>
-          <p className="text-slate-400 text-sm leading-relaxed mb-6">Lethbridge-owned electrical contracting for industrial, residential, agricultural, and commercial work across Southern Alberta.</p>
+          <p className="text-slate-400 text-sm leading-relaxed mb-6">Steinbach-based electrical contracting for residential, commercial, agricultural, maintenance, and specialty work across a 300 km service area.</p>
           <div className="flex space-x-4">
             <a href={companyLinks.website} className="text-slate-400 hover:text-secondary transition-colors" aria-label="Website">
               <Globe className="w-5 h-5" />
@@ -78,7 +78,7 @@ export function Footer() {
 
         <div>
           <h4 className="text-white font-headline font-bold mb-6 text-xs uppercase tracking-widest">Project Planning</h4>
-          <p className="text-slate-400 text-sm mb-4">Talk with Banda Electric about estimates, scheduling, maintenance support, or emergency service in Southern Alberta.</p>
+          <p className="text-slate-400 text-sm mb-4">Talk with JA Electric about estimates, scheduling, maintenance support, or 24-hour service across Steinbach and the surrounding region.</p>
           <div className="flex flex-col gap-3">
             <a
               href={companyLinks.phone}
@@ -94,7 +94,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-slate-500 text-xs mt-6">
-            2 Master Electricians · Five-Year Warranty
+            Licensed Electricians · Established 2010
           </p>
         </div>
       </div>

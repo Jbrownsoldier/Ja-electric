@@ -39,7 +39,7 @@ export function MobileBottomBar() {
             bg-secondary hover:brightness-110 active:scale-95
             text-primary font-headline font-bold uppercase tracking-widest text-xs
             rounded-md py-3.5
-            shadow-[0_0_15px_rgba(246,255,3,0.2)]
+            shadow-[0_0_15px_rgba(18,146,232,0.22)]
             transition-all duration-200
           "
           aria-label="Get a free quote"

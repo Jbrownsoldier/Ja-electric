@@ -114,8 +114,8 @@ export function Hero() {
         <div ref={headlineRef} className="will-change-transform will-change-opacity max-w-5xl">
           <h1 className="hero-headline">
             Powering {company.city} with{' '}
-            <span className="text-secondary">Industrial,</span>{' '}
-            <span className="text-secondary">Residential, &amp; Commercial Expertise.</span>
+            <span className="text-secondary">Reliable,</span>{' '}
+            <span className="text-secondary">Full-Service Electrical Expertise.</span>
           </h1>
         </div>
 
@@ -147,10 +147,10 @@ export function Hero() {
           className="max-w-3xl mt-0 will-change-opacity"
         >
           <p className="hero-sub-text">
-            Banda Electric is Lethbridge-owned and operated, with two master
-            electricians, 40+ years of combined experience, and industrial,
-            residential, agricultural, and commercial service backed by a
-            five-year warranty.
+            JA Electric has served Steinbach and surrounding communities since
+            2010 with licensed electricians, quick response times, and
+            dependable residential, commercial, agricultural, maintenance, and
+            specialty electrical support.
           </p>
 
           <button

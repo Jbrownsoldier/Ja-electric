@@ -27,7 +27,7 @@ const signs = [
  urgency: 'Medium',
  title: 'Expansion Needs More Capacity',
  description:
- 'When a facility adds new equipment, lines, or buildings, the electrical scope needs to keep up. Banda Electric positions design-build work as a core strength for upgrades and expansions.',
+ 'When a property adds new equipment, lines, or buildings, the electrical scope needs to keep up. JA Electric positions design-build work as a core strength for upgrades and expansions.',
  },
  {
  icon: Calendar,
@@ -55,13 +55,13 @@ const signs = [
  urgency: 'Medium',
  title: 'Underground Work Needs Line Location',
  description:
- 'Before excavation or site work begins, accurate line location matters. Banda Electric calls this out as part of its preventative maintenance offering, which makes it a natural fit for existing-facility support.',
+ 'Before excavation or site work begins, accurate underground cable locating matters. JA Electric includes that kind of planning support when the project calls for it.',
  },
 ];
 
 const urgencyStyle: Record<string, string> = {
  High: 'bg-red-50 text-red-600 border-red-100',
- Medium: 'bg-secondary/15 text-primary border-secondary/30',
+    Medium: 'bg-secondary/15 text-secondary border-secondary/30',
 };
 
 export function PanelSigns() {
@@ -103,7 +103,7 @@ function SignCard({ icon: Icon, urgency, title, description }: SignCardProps) {
  <div className="group p-6 rounded-2xl bg-white/[0.02] hover:border-secondary/30 hover:bg-white/[0.05] transition-all duration-300">
  <div className="flex items-start justify-between gap-3 mb-4">
  <div className="w-10 h-10 rounded-xl bg-secondary/10 group-hover:bg-secondary flex items-center justify-center transition-colors duration-300 shrink-0">
- <Icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-5 h-5 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${urgencyStyle[urgency]}`}>
  {urgency}

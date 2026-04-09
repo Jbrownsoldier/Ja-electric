@@ -33,8 +33,8 @@ export function ContactPage() {
     return (
         <>
             <SEO
-                title="Contact Banda Electric | (403) 330-8292 | Lethbridge, AB"
-                description="Get in touch with Banda Electric. Call (403) 330-8292 or email info@bandaelectric.com for industrial, residential, agricultural, and commercial electrical work in Southern Alberta."
+                title="Contact JA Electric | (204) 392-4768 | Steinbach, MB"
+                description="Get in touch with JA Electric. Call (204) 392-4768 or email info@jaelectricinc.ca for residential, commercial, agricultural, maintenance, and specialty electrical work near Steinbach."
                 canonical="/contact"
             />
             <JsonLd schema={breadcrumbSchema([
@@ -44,13 +44,13 @@ export function ContactPage() {
             <main className="pt-24 min-h-screen bg-primary">
                 {/* Header Section */}
                 <section className="relative overflow-hidden py-24 mb-16 px-6 lg:px-8 text-center bg-surface border-b border-white/5">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(246,255,3,0.05),transparent_70%)] pointer-events-none"></div>
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(18,146,232,0.09),transparent_70%)] pointer-events-none"></div>
                     <div className="max-w-4xl mx-auto relative z-10">
                         <h1 className="font-headline text-5xl md:text-7xl font-black text-white leading-none tracking-tighter mb-6 uppercase">
                             Start Your <span className="text-secondary block md:inline">Quote</span>
                         </h1>
                         <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-                            Reach Banda Electric for industrial, residential, agricultural, commercial, maintenance, and emergency electrical work across Southern Alberta.
+                            Reach JA Electric for residential, commercial, agricultural, maintenance, and specialty electrical work across Steinbach and the surrounding region.
                         </p>
                     </div>
                 </section>
@@ -105,7 +105,7 @@ export function ContactPage() {
                                     </span>
                                     <div className="bg-gradient-to-r from-secondary/10 to-transparent p-6 rounded-lg border-l-4 border-secondary">
                                         <p className="font-headline font-black text-white uppercase text-xl mb-1">24-Hour Phone Service</p>
-                                        <p className="text-slate-400 text-sm">Banda Electric offers quick turnaround, especially for emergency electrical issues.</p>
+                                        <p className="text-slate-400 text-sm">JA Electric offers quick turnaround, especially for urgent electrical issues and 24-hour service calls.</p>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@ export function ContactPage() {
                                     </div>
                                     <div className="bg-secondary/20 text-secondary px-3 py-1 rounded-full text-[10px] font-mono mb-4 border border-secondary/30">SIGNAL LOCKED</div>
                                     <h4 className="font-headline font-black text-2xl text-white uppercase tracking-tighter mb-2 font-mono">Request Received</h4>
-                                    <p className="text-slate-400 font-mono text-xs max-w-sm mx-auto uppercase leading-loose">YOUR PROJECT DETAILS ARE IN. BANDA ELECTRIC WILL FOLLOW UP TO REVIEW SCOPE, TIMING, AND NEXT STEPS.</p>
+                                    <p className="text-slate-400 font-mono text-xs max-w-sm mx-auto uppercase leading-loose">YOUR PROJECT DETAILS ARE IN. JA ELECTRIC WILL FOLLOW UP TO REVIEW SCOPE, TIMING, AND NEXT STEPS.</p>
                                     <button
                                         onClick={() => setSubmitted(false)}
                                         className="mt-8 text-secondary font-headline font-bold uppercase text-xs tracking-widest border-b border-transparent hover:border-secondary pb-1 transition-colors"
@@ -180,7 +180,7 @@ export function ContactPage() {
                                         <label className="text-[10px] font-headline font-bold text-slate-400 uppercase tracking-widest block">System Category</label>
                                         <select className="w-full bg-primary border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/50 transition-all font-mono text-sm appearance-none cursor-pointer">
                                             <option value="">Select Service...</option>
-                                            <option value="industrial">Industrial Electrical</option>
+                                            <option value="specialty">Specialty Electrical</option>
                                             <option value="commercial">Commercial Electrical</option>
                                             <option value="residential">Residential Electrical</option>
                                             <option value="agricultural">Agricultural Electrical</option>
@@ -200,13 +200,13 @@ export function ContactPage() {
 
                                     <button
                                         disabled={isSubmitting}
-                                        className={`w-full ${isSubmitting ? 'bg-secondary/50 text-primary font-mono animate-pulse' : 'bg-secondary text-primary hover:brightness-110 active:scale-[0.98]'} font-headline font-black uppercase tracking-widest p-4 rounded-lg flex items-center justify-center gap-3 transition-all`}
+                                        className={`w-full ${isSubmitting ? 'bg-secondary/50 text-slate-50 font-mono animate-pulse' : 'bg-secondary text-slate-50 hover:brightness-110 active:scale-[0.98]'} font-headline font-black uppercase tracking-widest p-4 rounded-lg flex items-center justify-center gap-3 transition-all`}
                                     >
                                         {isSubmitting ? PHASES[submissionPhase] : 'Send Request'}
                                         {!isSubmitting && <ArrowRight className="w-5 h-5" />}
                                     </button>
 
-                                    <p className="text-center font-mono text-[10px] text-slate-600 pt-4 uppercase">Banda Electric quote form // Southern Alberta coverage</p>
+                                    <p className="text-center font-mono text-[10px] text-slate-600 pt-4 uppercase">JA Electric quote form // Steinbach regional coverage</p>
                                 </form>
                             )}
                         </div>

@@ -12,8 +12,8 @@ export function AreasPage() {
   return (
     <>
       <SEO
-        title="Service Areas | Banda Electric | Lethbridge & Southern Alberta"
-        description="Banda Electric is based in Lethbridge and serves Southern Alberta with industrial, residential, agricultural, commercial, maintenance, and emergency electrical work."
+        title="Service Areas | JA Electric | Steinbach & Surrounding Region"
+        description="JA Electric is based in Steinbach and serves communities within roughly 300 kilometres with residential, commercial, agricultural, maintenance, and specialty electrical work."
         canonical="/areas"
       />
       <JsonLd schema={breadcrumbSchema([
@@ -24,7 +24,7 @@ export function AreasPage() {
         {/* Header Section */}
         <section className="relative overflow-hidden py-24 mb-16 px-6 lg:px-8">
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(246,255,3,0.1),transparent_50%)]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(18,146,232,0.14),transparent_50%)]"></div>
             <div className="absolute bottom-0 w-full h-px bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
           </div>
           <div className="max-w-7xl mx-auto relative z-10 text-center">
@@ -35,7 +35,7 @@ export function AreasPage() {
               Service <span className="text-secondary">Areas</span>
             </h1>
             <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Banda Electric is rooted in Lethbridge and works across Southern Alberta for industrial, residential, agricultural, and commercial clients.
+              JA Electric is rooted in Steinbach and works across the surrounding region for residential, commercial, agricultural, maintenance, and specialty electrical clients.
             </p>
           </div>
         </section>
@@ -53,11 +53,11 @@ export function AreasPage() {
                 <div className="flex flex-col gap-2">
                     <div className="bg-primary/80 backdrop-blur-md border border-white/10 p-2 rounded flex items-center gap-3">
                       <div className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
-                    <span className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Lat: 49.7165° N</span>
+                    <span className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Lat: 49.5301° N</span>
                   </div>
                   <div className="bg-primary/80 backdrop-blur-md border border-white/10 p-2 rounded flex items-center gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
-                    <span className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Long: 112.7974° W</span>
+                    <span className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Long: 96.6845° W</span>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export function AreasPage() {
                 <Clock className="w-12 h-12 text-secondary mb-4 opacity-80" />
                 <h4 className="font-headline font-bold text-white uppercase tracking-widest text-sm mb-2">Coverage Focus</h4>
                 <div className="text-4xl font-headline font-black text-white mb-2 tracking-tighter">{company.city}</div>
-                <p className="text-xs text-slate-500 max-w-[200px]">Local base with service extending across nearby Southern Alberta communities and rural sites.</p>
+                <p className="text-xs text-slate-500 max-w-[200px]">Local base with service extending across Manitoba communities and rural sites within about 300 kilometres.</p>
               </div>
 
             </div>
@@ -107,12 +107,12 @@ export function AreasPage() {
               <ShieldCheck className="w-10 h-10 text-secondary" />
               <div>
                 <h4 className="font-headline font-bold text-white uppercase tracking-widest text-sm mb-1">Out of Bounds Request</h4>
-                <p className="text-xs text-slate-400">Need work outside the core Lethbridge area? Reach out and we’ll confirm the best fit for your job.</p>
+                <p className="text-xs text-slate-400">Need work outside the core Steinbach area? Reach out and we’ll confirm the best fit for your job.</p>
               </div>
             </div>
             <button
               onClick={openQuoteModal}
-              className="bg-surface border border-secondary text-secondary hover:bg-secondary hover:text-primary transition-colors px-6 py-3 rounded text-xs font-headline font-black uppercase tracking-widest shrink-0"
+              className="bg-surface border border-secondary text-secondary hover:bg-secondary hover:text-slate-50 transition-colors px-6 py-3 rounded text-xs font-headline font-black uppercase tracking-widest shrink-0"
             >
               Request Coverage
             </button>

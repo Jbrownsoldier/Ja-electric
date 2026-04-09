@@ -2,12 +2,12 @@ import { ShieldCheck, BadgeCheck, Clock, MessageSquare, Building2, MapPin } from
 import { ScrollReveal, ScrollRevealItem } from './ScrollReveal';
 
 const trustItems = [
-  { icon: ShieldCheck, label: '2 Master Electricians', microcopy: 'Industry Certified' },
-  { icon: BadgeCheck, label: 'Five-Year Warranty', microcopy: 'Parts & Labour' },
-  { icon: Clock, label: '40+ Years Combined', microcopy: 'Built on Experience' },
-  { icon: MessageSquare, label: 'Emergency Repair', microcopy: '24-Hour Phone Service' },
-  { icon: Building2, label: 'All Major Sectors', microcopy: 'Industrial to Agricultural' },
-  { icon: MapPin, label: 'Southern Alberta', microcopy: 'Lethbridge Owned & Operated' },
+  { icon: ShieldCheck, label: 'Licensed Electricians', microcopy: 'Safe, reliable work' },
+  { icon: BadgeCheck, label: 'Established 2010', microcopy: 'Built on experience' },
+  { icon: Clock, label: 'Quick Response Times', microcopy: 'Responsive support' },
+  { icon: MessageSquare, label: '24-Hour Service', microcopy: 'Call when it matters' },
+  { icon: Building2, label: 'Full-Service Electrical', microcopy: 'Residential to agricultural' },
+  { icon: MapPin, label: '300 km Coverage', microcopy: 'Steinbach based' },
 ];
 
 export function TrustBar() {

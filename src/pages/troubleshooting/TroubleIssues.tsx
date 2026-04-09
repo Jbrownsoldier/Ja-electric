@@ -99,7 +99,7 @@ const issues: Issue[] = [
 
 const severityStyle: Record<Severity, string> = {
  Emergency: 'bg-red-50 text-red-600 border-red-100',
- Urgent: 'bg-secondary/15 text-primary border-secondary/30',
+    Urgent: 'bg-secondary/15 text-secondary border-secondary/30',
  Standard: 'bg-zinc-100 text-zinc-700 border-zinc-200',
 };
 
@@ -111,11 +111,11 @@ export function TroubleIssues() {
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
  Common Issues
  </p>
- <h2 className="text-primary mb-4">
- Problems This Route Now Covers for Banda Electric
+ <h2 className="text-white mb-4">
+ Problems This Route Now Covers for JA Electric
  </h2>
  <p className="text-gray-500 text-lg leading-relaxed">
- From emergency repair calls to preventative maintenance concerns, Banda
+ From emergency repair calls to preventative maintenance concerns, JA
  Electric handles a wide range of issues with a practical, diagnosis-first
  approach built for reliable long-term results.
  </p>
@@ -145,14 +145,14 @@ function IssueCard({ icon: Icon, severity, title, description, possibleCauses }:
  <div className="group p-6 rounded-2xl bg-surface hover:border-secondary/30 hover:shadow-ambient transition-all duration-300">
  <div className="flex items-start justify-between gap-3 mb-4">
  <div className="w-10 h-10 rounded-xl bg-secondary/10 group-hover:bg-secondary flex items-center justify-center transition-colors duration-300 shrink-0">
- <Icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-5 h-5 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border shrink-0 ${severityStyle[severity]}`}>
  {severity}
  </span>
  </div>
 
- <h3 className="text-primary font-bold text-base mb-2 leading-snug">{title}</h3>
+ <h3 className="text-white font-bold text-base mb-2 leading-snug">{title}</h3>
  <p className="text-gray-500 text-sm leading-relaxed mb-4">{description}</p>
 
  <div>

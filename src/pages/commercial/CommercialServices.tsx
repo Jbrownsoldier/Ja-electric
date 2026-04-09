@@ -25,35 +25,35 @@ const services: Service[] = [
  icon: Building2,
  title: 'Maintenance Contracts',
  description:
- 'Banda Electric specifically calls out maintenance contracts as part of its commercial offering, making this route a natural fit for clients who need dependable ongoing support.',
+ 'JA Electric offers ongoing maintenance support for commercial clients that need dependable service after the initial project is complete.',
  tags: ['Ongoing support', 'Scheduled service', 'Commercial clients'],
  },
  {
  icon: ShoppingBag,
  title: 'New Build & Build-to-Suit',
  description:
- 'The Banda services page promises a full start-to-finish experience for commercial builds, with a focus on meeting deadlines and maintaining a high standard of quality.',
+ 'JA Electric supports commercial builds from planning through execution, with a focus on meeting deadlines and maintaining a high standard of quality.',
  tags: ['New construction', 'Build-to-suit', 'Start to finish'],
  },
  {
  icon: Zap,
  title: 'Power Distribution',
  description:
- 'Power distribution is a core part of Banda Electric’s systems work for growing commercial spaces and specialized facilities.',
+ 'Power distribution and practical electrical upgrades are a core part of JA Electric’s systems work for growing commercial spaces and specialized facilities.',
  tags: ['Distribution', 'Capacity planning', 'Commercial systems'],
  },
  {
  icon: AlertTriangle,
  title: 'Life-Safety Systems',
  description:
- 'Life-safety support is part of the Banda source messaging, alongside the quality-focused installation and maintenance work the company provides to commercial properties.',
+ 'Commercial properties benefit from dependable installation, maintenance, and support for the systems that keep the building running safely.',
  tags: ['Safety systems', 'Reliable operation', 'Commercial support'],
  },
  {
  icon: Sun,
  title: 'Specialty & Parking Lighting',
  description:
- 'Specialty and parking lighting are named directly on the Banda site, so this card now reflects that commercial lighting expertise without changing the grid or visual style.',
+ 'Exterior and specialty lighting are a useful fit for commercial properties that need reliable coverage without changing the grid or visual style.',
  tags: ['Parking lighting', 'Specialty lighting', 'Exterior systems'],
  },
  {
@@ -67,21 +67,21 @@ const services: Service[] = [
  icon: Car,
  title: 'Shopping Malls & Multi-Tenant Facilities',
  description:
- 'Shopping malls and other larger commercial occupancies are part of the broader property mix Banda Electric supports across Southern Alberta.',
+ 'Larger commercial occupancies are part of the broader property mix JA Electric can support across the regional service area.',
  tags: ['Malls', 'Common areas', 'Shared facilities'],
  },
  {
  icon: Power,
  title: 'Long-Term Living & Daycare Facilities',
  description:
- 'Banda Electric names long-term living facilities and daycares as examples of the commercial environments it supports across Southern Alberta.',
+ 'Long-term living facilities, community spaces, and other occupied properties need reliable commercial electrical support that fits daily operations.',
  tags: ['Institutional', 'Occupancy support', 'Reliable service'],
  },
  {
  icon: Lamp,
  title: 'Manufacturing & Facility Support',
  description:
- 'Commercial and industrial scopes often overlap. This card preserves the slot but now points to Banda’s broader facility experience with manufacturing and complex operations.',
+ 'Commercial and specialty scopes often overlap. This card preserves the slot while pointing to broader facility experience with manufacturing and complex operations.',
  tags: ['Manufacturing', 'Facility operations', 'Complex sites'],
  },
  {
@@ -116,11 +116,11 @@ export function CommercialServices() {
  Commercial Services
  </p>
  <h2 className="text-white mb-4">
- The Commercial Work Banda Electric Highlights
+ The Commercial Work JA Electric Highlights
  </h2>
  <p className="text-gray-400 text-lg leading-relaxed">
  Maintenance, build-to-suit delivery, and deadline-focused commercial support
- define the work Banda Electric brings to Southern Alberta properties.
+ define the work JA Electric brings to regional commercial properties.
  </p>
  </div>
 
@@ -138,7 +138,7 @@ function ServiceCard({ icon: Icon, title, description, tags }: Service) {
  return (
  <div className="group p-6 rounded-2xl bg-white/[0.02] hover:border-secondary/40 hover:bg-white/[0.05] transition-all duration-300 flex flex-col">
  <div className="w-10 h-10 rounded-xl bg-secondary/10 group-hover:bg-secondary flex items-center justify-center transition-colors duration-300 mb-4">
- <Icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-5 h-5 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
 
  <h3 className="text-white font-bold text-base mb-2 leading-snug">{title}</h3>

@@ -13,7 +13,7 @@ const BUSINESS_IDENTITY = {
   name: company.legalName,
   alternateName: company.name,
   description:
-    'Lethbridge electrical contractor serving Southern Alberta with industrial, residential, agricultural, and commercial electrical services, preventative maintenance, line location, power quality analysis, and emergency repair.',
+    'JA Electric provides residential, commercial, agricultural, specialty, maintenance, repair, inspection, generator, smart home, and underground cable locating services from Steinbach across a 300 kilometre service radius.',
   url: BASE_URL,
   telephone: company.phoneHref,
   email: company.email,
@@ -21,6 +21,7 @@ const BUSINESS_IDENTITY = {
   currenciesAccepted: 'CAD',
   paymentAccepted: 'Cash, Credit Card, E-Transfer',
   openingHours: 'Mo-Su 00:00-24:00',
+  foundingDate: company.founded,
   address: {
     '@type': 'PostalAddress',
     streetAddress: company.addressLine1,
@@ -31,8 +32,8 @@ const BUSINESS_IDENTITY = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 49.7165,
-    longitude: -112.7974,
+    latitude: 49.5301,
+    longitude: -96.6845,
   },
   areaServed: serviceAreas.map((name) => ({ '@type': 'City', name })),
   image: `${BASE_URL}${company.ogImage}`,

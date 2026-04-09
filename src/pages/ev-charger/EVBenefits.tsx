@@ -3,15 +3,15 @@ import { Moon, FileCheck, Gauge, ShieldCheck, Wrench, MapPin } from 'lucide-reac
 const benefits = [
  {
  icon: Moon,
- title: 'Lethbridge Owned & Operated',
+ title: 'Steinbach Based Service',
  description:
- 'Banda Electric is rooted in Lethbridge and built around practical service for Southern Alberta homes, acreages, and family properties.',
+ 'JA Electric is rooted in Steinbach and built around practical service for homes, acreages, and family properties across the surrounding region.',
  },
  {
  icon: ShieldCheck,
- title: 'Two Master Electricians',
+ title: 'Licensed Electrical Team',
  description:
- 'The company highlights two master electricians and a highly trained crew, giving residential clients experienced oversight from quote to completion.',
+ 'The company highlights licensed electricians and experienced staff, giving residential clients dependable oversight from quote to completion.',
  },
  {
  icon: FileCheck,
@@ -21,9 +21,9 @@ const benefits = [
  },
  {
  icon: Gauge,
- title: 'Five-Year Warranty',
+ title: 'Quality & Safety Focus',
  description:
- 'Banda Electric stands behind the work with a five-year warranty, giving homeowners added confidence once the job is finished.',
+ 'JA Electric emphasizes quality, safety, and customer satisfaction, giving homeowners added confidence once the job is finished.',
  },
  {
  icon: Wrench,
@@ -35,7 +35,7 @@ const benefits = [
  icon: MapPin,
  title: 'Emergency Support Available',
  description:
- 'With 24-hour phone service and quick turnaround, Banda Electric is positioned to support urgent residential electrical issues when they come up.',
+ 'With 24-hour service and quick turnaround, JA Electric is positioned to support urgent residential electrical issues when they come up.',
  },
 ];
 
@@ -47,8 +47,8 @@ export function EVBenefits() {
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
  Why Choose Us
  </p>
- <h2 className="text-primary mb-4">
- Why Homeowners Call Banda Electric
+ <h2 className="text-white mb-4">
+ Why Homeowners Call JA Electric
  </h2>
  <p className="text-gray-500 text-lg leading-relaxed">
  Residential work moves better when the quote is clear, the crew is experienced,
@@ -76,9 +76,9 @@ function BenefitCard({ icon: Icon, title, description }: BenefitCardProps) {
  return (
  <div className="group p-7 rounded-2xl bg-surface-container-low hover:border-secondary/30 hover:bg-white hover:shadow-ambient transition-all duration-300">
  <div className="w-11 h-11 rounded-xl bg-secondary/10 flex items-center justify-center mb-5 group-hover:bg-secondary transition-colors duration-300">
- <Icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-5 h-5 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
- <h3 className="text-primary font-bold text-base mb-2 leading-snug">{title}</h3>
+ <h3 className="text-white font-bold text-base mb-2 leading-snug">{title}</h3>
  <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
  </div>
  );

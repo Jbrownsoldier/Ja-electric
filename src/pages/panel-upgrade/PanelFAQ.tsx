@@ -6,37 +6,37 @@ const faqs = [
  {
  question: 'What kinds of industrial facilities do you work on?',
  answer:
-"Banda Electric works across industrial and heavy commercial environments including manufacturing units, seed plants, feed mills, airport lighting, and other specialized Southern Alberta facilities that need reliable electrical construction, maintenance, and repair support.",
+"JA Electric supports specialty scopes such as design builds, generators, network and communications work, audio, directional boring, bucket truck service, project budgeting, and project management.",
  },
  {
  question: 'Do you handle maintenance as well as new industrial installs?',
  answer:
-"Yes. Banda Electric provides design-build construction, preventative maintenance, power quality analysis, line location, service work, and emergency repair.",
+"Yes. JA Electric provides specialty installations alongside maintenance, repairs, underground cable locating, and practical project support.",
  },
  {
- question: 'Can Banda Electric support design-build industrial projects?',
+ question: 'Can JA Electric support design-build specialty projects?',
  answer:
-"Yes. Banda Electric positions design-build as a core capability, tailoring power distribution, lighting, life-safety, and specialty electrical systems to the building scope, size, and operational requirements.",
+"Yes. JA Electric positions design-build support as a core capability, tailoring systems to the project scope, site conditions, and operational requirements.",
  },
  {
  question: 'How quickly can we get help in an emergency?',
  answer:
-"The Banda Electric site highlights 24-hour phone service and quick turnaround, especially for emergency repair situations. The team is set up to respond to service, repair, and maintenance requests across Southern Alberta in a timely manner.",
+"JA Electric highlights 24-hour service and quick turnaround, especially for urgent situations. The team is set up to respond to service, repair, and maintenance requests across the surrounding region in a timely manner.",
  },
  {
- question: 'Do you work only in Lethbridge?',
+ question: 'Do you work only in Steinbach?',
  answer:
-`No. ${company.name} is based in Lethbridge and serves Southern Alberta, including Coaldale, Coalhurst, Fort Macleod, Cardston, and surrounding communities.`,
+`No. ${company.name} is based in Steinbach and serves a broad regional area, including communities within roughly 300 kilometres.`,
  },
  {
  question: 'What is included in an industrial quote?',
  answer:
-"Banda Electric states that a senior team member prepares detailed quotes with a focus on the best configuration, the right equipment, and the most cost-effective use and maintenance of the system.",
+"JA Electric reviews the scope, the site conditions, and the best-fit solution so the quote reflects the real work required.",
  },
  {
  question: 'Do you take on complex specialty projects?',
  answer:
-"Yes. Banda Electric takes on large and complex work, especially airport lighting plus industrial and commercial projects that require experienced planning, execution, and ongoing support.",
+"Yes. JA Electric takes on complex specialty scopes that require experienced planning, execution, and ongoing support.",
  },
  {
  question: 'What types of industrial systems do you commonly help with?',
@@ -59,7 +59,7 @@ export function PanelFAQ() {
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
  FAQ
  </p>
- <h2 className="text-primary mb-4">Common Questions</h2>
+ <h2 className="text-white mb-4">Common Questions</h2>
  <p className="text-gray-500 text-lg leading-relaxed">
  Everything you need to know before booking industrial electrical support. Have
  a specific question?{' '}
@@ -102,7 +102,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
  >
  <span
  className={`text-sm md:text-[0.9375rem] font-semibold transition-colors duration-200 ${
- isOpen ? 'text-secondary' : 'text-primary group-hover:text-secondary'
+ isOpen ? 'text-secondary' : 'text-white group-hover:text-secondary'
  }`}
  >
  {question}
@@ -110,7 +110,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
  <span
  className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center border transition-all duration-200 ${
  isOpen
- ? 'bg-secondary border-secondary text-primary'
+ ? 'bg-secondary border-secondary text-slate-50'
  : 'bg-surface border-outline-variant/15 text-gray-400 group-hover:border-secondary group-hover:text-secondary'
  }`}
  >

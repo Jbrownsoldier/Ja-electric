@@ -11,7 +11,7 @@ export const ElectricProgressBar = ({ progress }: ElectricProgressBarProps) => {
       <motion.div 
         className="absolute inset-0 opacity-20"
         style={{
-          background: 'linear-gradient(90deg, transparent, #F6FF03, transparent)',
+          background: 'linear-gradient(90deg, transparent, #1292e8, transparent)',
           backgroundSize: '200% 100%'
         }}
         animate={{
@@ -26,7 +26,7 @@ export const ElectricProgressBar = ({ progress }: ElectricProgressBarProps) => {
 
       {/* Main Progress Bar */}
       <motion.div
-        className="absolute top-0 left-0 h-full bg-secondary shadow-[0_0_20px_#F6FF03,0_0_10px_#fff]"
+        className="absolute top-0 left-0 h-full bg-secondary shadow-[0_0_20px_#1292e8,0_0_10px_rgba(255,255,255,0.65)]"
         initial={{ width: 0 }}
         animate={{ width: `${progress * 100}%` }}
         transition={{ duration: 0.5, ease: "easeOut" }}

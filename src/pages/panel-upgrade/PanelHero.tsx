@@ -3,10 +3,10 @@ import { Button } from '../../components/Button';
 import { company } from '../../config/company';
 
 const trustItems = [
- { icon: Shield, label: '2 Master Electricians' },
+ { icon: Shield, label: 'Licensed Electricians' },
  { icon: FileCheck, label: 'Design-Build Support' },
- { icon: Zap, label: 'Industrial Projects' },
- { icon: Clock, label: '40+ Years Combined' },
+ { icon: Zap, label: 'Specialty Projects' },
+ { icon: Clock, label: 'Established 2010' },
 ];
 
 export function PanelHero() {
@@ -18,17 +18,17 @@ export function PanelHero() {
  <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
  <div className="order-2 lg:order-1">
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm md:text-base mb-4">
- Industrial Electrical · Lethbridge &amp; Southern Alberta
+ Specialty Electrical · Steinbach &amp; Surrounding Region
  </p>
 
  <h1 className="text-white mb-6">
- Industrial Electrical Support for Active Facilities
+ Specialty Electrical Support for Complex Projects
  </h1>
 
  <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
- Design-build electrical, preventative maintenance, emergency repair, and
- specialty system support for industrial sites, airport lighting, seed plants,
- feed mills, and complex facilities across Southern Alberta.
+ Design-build electrical, generator support, communications, audio,
+ directional boring, bucket truck service, and project coordination for
+ complex properties across the surrounding region.
  </p>
 
  <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -61,15 +61,15 @@ export function PanelHero() {
 
 function PanelHeroVisual() {
  const specs = [
- { label: 'Coverage', value: 'Southern AB' },
+ { label: 'Coverage', value: '300 km Area' },
  { label: 'Phone Service', value: '24-Hour' },
- { label: 'Warranty', value: '5-Year' },
+ { label: 'Service', value: '24-Hour' },
  ];
 
  const included = [
- 'Design-build for new and expanding facilities',
- 'Preventative maintenance and line location',
- 'Emergency repair with quick turnaround',
+ 'Design-build support for new and evolving projects',
+ 'Communications, audio, and generator systems',
+ 'Directional boring and bucket truck service',
  ];
 
  return (
@@ -82,10 +82,10 @@ function PanelHeroVisual() {
  <div className="flex items-center justify-between mb-4">
  <div className="flex items-center gap-3">
  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
- <CircuitBoard className="w-6 h-6 text-primary"/>
+ <CircuitBoard className="w-6 h-6 text-slate-50"/>
  </div>
  <div>
- <p className="text-white font-semibold">Industrial Electrical</p>
+ <p className="text-white font-semibold">Specialty Electrical</p>
  <p className="text-gray-400 text-sm">{company.name}</p>
  </div>
  </div>
@@ -96,10 +96,10 @@ function PanelHeroVisual() {
  </div>
  <div className="flex gap-2">
  <span className="px-3 py-1 bg-secondary/20 text-secondary text-xs font-medium rounded-full">
- Industrial
+ Specialty
  </span>
  <span className="px-3 py-1 bg-secondary/20 text-secondary text-xs font-medium rounded-full">
- Agricultural
+ Design-Build
  </span>
  </div>
  </div>
@@ -108,7 +108,7 @@ function PanelHeroVisual() {
  <div className="grid grid-cols-3 gap-3">
  {specs.map((s) => (
  <div key={s.label} className="bg-surface-container-low rounded-xl p-3 text-center">
- <p className="font-bold text-gray-900 text-sm leading-snug">{s.value}</p>
+ <p className="font-bold text-white text-sm leading-snug">{s.value}</p>
  <p className="text-gray-500 text-xs mt-0.5 leading-snug">{s.label}</p>
  </div>
  ))}
@@ -127,12 +127,12 @@ function PanelHeroVisual() {
  <div className="px-6 pb-6">
  <div className="flex items-center justify-between p-4 bg-surface-container-low rounded-xl">
  <div>
- <p className="text-gray-500 text-sm">Master Electricians</p>
- <p className="font-bold text-gray-900 text-xl mt-0.5">2</p>
+ <p className="text-gray-500 text-sm">Established</p>
+ <p className="font-bold text-white text-xl mt-0.5">2010</p>
  </div>
  <div className="text-right">
  <p className="text-gray-500 text-sm">Experience</p>
- <p className="font-bold text-gray-900 text-xl mt-0.5">40+ Yrs</p>
+ <p className="font-bold text-white text-xl mt-0.5">24-Hr</p>
  </div>
  </div>
  </div>
@@ -144,8 +144,8 @@ function PanelHeroVisual() {
  <Shield className="w-5 h-5 text-secondary"/>
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm">Five-Year Warranty</p>
- <p className="text-gray-500 text-xs">Backed by Banda Electric</p>
+ <p className="font-semibold text-white text-sm">Quality-Focused Work</p>
+ <p className="text-gray-500 text-xs">Backed by JA Electric</p>
  </div>
  </div>
  </div>

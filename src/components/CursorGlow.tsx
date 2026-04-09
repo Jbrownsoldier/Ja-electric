@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 
 /**
- * A soft Banda-yellow orb that smoothly follows the mouse cursor.
+ * A soft branded orb that smoothly follows the mouse cursor.
  * Mount once at the root level (in App.tsx).
  */
 export function CursorGlow() {
@@ -47,7 +47,7 @@ export function CursorGlow() {
           height: 500,
           marginTop: -250,
           marginLeft: -250,
-          background: 'radial-gradient(circle, rgba(246,255,3,0.07) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(18,146,232,0.08) 0%, transparent 70%)',
         }}
       />
       {/* Inner crisp glow */}
@@ -56,7 +56,7 @@ export function CursorGlow() {
         style={{
           width: 120,
           height: 120,
-          background: 'radial-gradient(circle, rgba(246,255,3,0.12) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(18,146,232,0.14) 0%, transparent 70%)',
         }}
       />
     </motion.div>

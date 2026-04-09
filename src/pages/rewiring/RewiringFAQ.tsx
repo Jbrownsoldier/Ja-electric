@@ -5,42 +5,42 @@ const faqs = [
  {
  question: 'What kinds of agricultural electrical work do you handle?',
  answer:
-"Agricultural electrical is a core Banda Electric service line, including seed plants, feed mills, design-build work, maintenance, and broader farm-related support across Southern Alberta.",
+"Agricultural electrical is a core JA Electric service line, including farm service, outbuilding power, repairs, maintenance, upgrades, and broader farm-related support.",
  },
  {
  question: 'Do you work on seed plants and feed mills?',
  answer:
-"Yes. The Banda Electric services page specifically names highly sophisticated seed plants and feed mills as examples of the agricultural work the company takes on.",
+"JA Electric serves agricultural properties that need reliable electrical support for barns, shops, pumps, outbuildings, and other farm-related systems.",
  },
  {
  question: 'Do you provide both maintenance and new agricultural installs?',
  answer:
-"Yes. Banda Electric describes its agricultural offering as everything from maintenance through design-build, which makes this route suitable for both active-facility service needs and expansion or new-construction scopes.",
+"Yes. JA Electric's agricultural offering works for both active-facility service needs and expansion or new-construction scopes.",
  },
  {
- question: 'Can Banda Electric help with barns, shops, and other farm structures?',
+ question: 'Can JA Electric help with barns, shops, and other farm structures?',
  answer:
-"Yes. Banda Electric supports barns, shops, feed systems, irrigation support, and other farm-related electrical work across Southern Alberta.",
+"Yes. JA Electric supports barns, shops, feed systems, irrigation support, and other farm-related electrical work.",
  },
  {
  question: 'How quickly can we get help for an agricultural electrical issue?',
  answer:
-"Banda Electric notes that its 24-hour phone service is intended to guarantee quick turnaround, especially in emergencies. That same positioning now carries through to this agricultural route.",
+"JA Electric notes its 24-hour service and quick turnaround for urgent situations, which also applies to agricultural calls.",
  },
  {
- question: 'Do you only work in Lethbridge?',
+ question: 'Do you only work in Steinbach?',
  answer:
-`No. Banda Electric is based in Lethbridge and serves Southern Alberta, including surrounding communities and agricultural sites that need local, dependable electrical support.`,
+`No. JA Electric is based in Steinbach and serves a broad regional area, including surrounding communities and agricultural sites that need dependable electrical support.`,
  },
  {
  question: "What's included in an agricultural electrical quote?",
  answer:
-"The Banda Electric contact page says a senior member of the team prepares detailed quotes with attention to the right configuration, equipment selection, and cost-effective long-term use and maintenance.",
+"JA Electric reviews the site, the operating needs, and the right fit for the project so the quote reflects the actual work required.",
  },
  {
  question: 'Can you support agricultural expansions and new builds?',
  answer:
-"Yes. Banda Electric's services page explicitly says the team enjoys all aspects of agricultural work, from maintenance to design-build, which makes it a fit for facility expansions, new structures, and system upgrades.",
+"Yes. JA Electric supports agricultural expansions, new structures, and system upgrades where dependable planning and installation matter.",
  },
 ];
 
@@ -58,7 +58,7 @@ export function RewiringFAQ() {
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
  FAQ
  </p>
- <h2 className="text-primary mb-4">Common Questions About Agricultural Electrical</h2>
+ <h2 className="text-white mb-4">Common Questions About Agricultural Electrical</h2>
  <p className="text-gray-500 text-lg leading-relaxed">
  Straightforward answers to what agricultural clients most often ask before
  committing to an electrical project.{' '}
@@ -102,7 +102,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
  >
  <span
  className={`text-sm md:text-[0.9375rem] font-semibold transition-colors duration-200 ${
- isOpen ? 'text-secondary' : 'text-primary group-hover:text-secondary'
+ isOpen ? 'text-secondary' : 'text-white group-hover:text-secondary'
  }`}
  >
  {question}
@@ -110,7 +110,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
  <span
  className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center border transition-all duration-200 ${
  isOpen
- ? 'bg-secondary border-secondary text-primary'
+ ? 'bg-secondary border-secondary text-slate-50'
  : 'bg-surface border-outline-variant/15 text-gray-400 group-hover:border-secondary group-hover:text-secondary'
  }`}
  >

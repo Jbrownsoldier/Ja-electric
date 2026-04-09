@@ -12,44 +12,44 @@ gsap.registerPlugin(ScrollTrigger);
 const HIGHLIGHTS = [
   {
     title: 'Owned / Operated Locally',
-    eyebrow: 'Lethbridge based',
+    eyebrow: 'Steinbach based',
     text:
-      'Banda Electric is a locally owned electrical contractor serving Lethbridge and Southern Alberta with practical field support across industrial, commercial, agricultural, and residential work.',
+      'JA Electric is a Steinbach electrical contractor serving a broad regional area with practical support across residential, commercial, agricultural, maintenance, and specialty work.',
     initials: 'LO',
   },
   {
-    title: '2 Master Electricians',
+    title: 'Licensed Electricians',
     eyebrow: 'Experienced leadership',
     text:
-      'Two master electricians lead a highly trained support team, giving Banda Electric the kind of experienced field leadership clients want on demanding jobs.',
-    initials: '2M',
+      'JA Electric highlights licensed electricians and experienced staff, giving clients dependable field leadership on demanding jobs.',
+    initials: 'LE',
   },
   {
-    title: '40+ Years Combined Experience',
+    title: 'Established in 2010',
     eyebrow: 'Depth in the field',
     text:
-      'Banda Electric emphasizes combined experience across complex electrical scopes, giving Southern Alberta clients a team that can move between maintenance, upgrades, and specialty work with confidence.',
-    initials: '40',
+      'JA Electric has been serving customers since 2010, giving clients a team that can move between maintenance, upgrades, and specialty work with confidence.',
+    initials: '10',
   },
   {
-    title: 'Industrial, Commercial, Agricultural, Residential',
+    title: 'Residential, Commercial, Agricultural, Specialty',
     eyebrow: 'All major sectors',
     text:
-      'Banda Electric serves airports, commercial properties, industrial facilities, agricultural operations, and residential clients across Southern Alberta.',
+      'JA Electric serves homes, commercial properties, agricultural operations, and specialty project clients across the surrounding region.',
     initials: 'SV',
   },
   {
     title: 'Design-Build and Maintenance',
     eyebrow: 'Start to finish',
     text:
-      'Banda Electric positions itself around both new project delivery and ongoing maintenance support, including power distribution, specialty lighting, and operational upgrades that keep systems running efficiently.',
+      'JA Electric supports both new project delivery and ongoing maintenance, including design builds, communications, generators, underground locating, and practical operational upgrades.',
     initials: 'DB',
   },
   {
     title: 'Preventative Maintenance',
     eyebrow: 'Built for reliability',
     text:
-      'Preventative maintenance is a core part of the Banda message, including power quality analysis and line location for clients who want to reduce risk before downtime becomes a bigger problem.',
+      'Preventative maintenance, inspections, and underground cable locating help clients reduce risk before downtime becomes a bigger problem.',
     initials: 'PM',
   },
   {
@@ -63,7 +63,7 @@ const HIGHLIGHTS = [
     title: 'Power Distribution, Lighting, Life Safety',
     eyebrow: 'Commercial and industrial systems',
     text:
-      'Power distribution, specialty lighting, parking lighting, and life-safety systems are all part of the Banda Electric service mix for commercial and industrial properties.',
+      'Commercial support includes installations, maintenance, upgrades, and practical electrical solutions that keep properties safe and operational.',
     initials: 'PL',
   },
   {
@@ -74,17 +74,17 @@ const HIGHLIGHTS = [
     initials: 'AG',
   },
   {
-    title: 'Five-Year Warranty',
-    eyebrow: 'Parts and labour backing',
+    title: 'Super Service Award',
+    eyebrow: 'Recognized for service',
     text:
-      'Banda Electric backs its work with a five-year warranty on parts and labour, giving clients added confidence after the project is complete.',
-    initials: '5Y',
+      'JA Electric highlights a Super Service Award as one of the trust signals behind its commitment to customer service.',
+    initials: 'SS',
   },
   {
     title: 'Safety First',
     eyebrow: 'Strict safety culture',
     text:
-      'A strong safety culture, proper PPE, regular training, and attention to risk management are central parts of how Banda Electric operates.',
+      'A strong safety culture and attention to quality and customer satisfaction are central parts of how JA Electric operates.',
     initials: 'SF',
   },
   {
@@ -143,13 +143,13 @@ export function ReviewsPage() {
   return (
     <>
       <SEO
-        title="Why Banda Electric | Southern Alberta Electrical Contractor"
-        description="Explore the Banda Electric strengths that define the business across Southern Alberta: local ownership, two master electricians, agricultural and industrial experience, preventative maintenance, emergency repair, and a five-year warranty."
+        title="Why JA Electric | Steinbach Electrical Contractor"
+        description="Explore the JA Electric strengths that define the business across Steinbach and the surrounding region: licensed electricians, responsive service, agricultural and commercial experience, maintenance support, and practical project solutions."
         canonical="/reviews"
       />
       <JsonLd schema={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: 'Why Banda Electric', path: '/reviews' },
+        { name: 'Why JA Electric', path: '/reviews' },
       ])} />
       <main className="min-h-screen bg-primary pt-24 overflow-x-hidden">
         <section className="relative py-20 px-6 lg:px-8 text-center">
@@ -160,34 +160,34 @@ export function ReviewsPage() {
           <div className="max-w-4xl mx-auto relative z-10">
             <span className="inline-flex items-center gap-2 px-3 py-1 bg-surface border border-white/5 text-slate-400 rounded-full text-xs font-headline font-bold tracking-[0.2em] uppercase mb-6">
               <Zap className="w-3 h-3 animate-pulse text-secondary" />
-              Why Banda
+              Why JA
             </span>
             <h1 className="font-headline text-5xl md:text-7xl font-black text-white leading-none tracking-tighter mb-6 uppercase">
-              Banda <span className="text-secondary">Highlights</span>
+              JA <span className="text-secondary">Highlights</span>
             </h1>
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              Explore the strengths that define {company.name} across Lethbridge
-              and Southern Alberta, from field experience and maintenance support
-              to safety, warranty backing, and local accountability.
+              Explore the strengths that define {company.name} across Steinbach
+              and the surrounding region, from field experience and maintenance support
+              to safety, service, and local accountability.
             </p>
 
             <div className="flex flex-wrap justify-center gap-8 mt-12 mb-4">
               <div className="flex flex-col items-center">
-                <div className="text-4xl font-headline font-black text-white italic">2</div>
+                <div className="text-4xl font-headline font-black text-white italic">2010</div>
                 <div className="flex gap-1 my-2">
                   {[1, 2].map((item) => (
                     <CheckCircle2 key={item} className="w-4 h-4 text-secondary" />
                   ))}
                 </div>
-                <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Master Electricians</div>
+                <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Established</div>
               </div>
               <div className="w-px h-16 bg-white/10 hidden sm:block"></div>
               <div className="flex flex-col items-center">
-                <div className="text-4xl font-headline font-black text-white">5-YR</div>
+                <div className="text-4xl font-headline font-black text-white">24-HR</div>
                 <div className="flex gap-1 my-2 text-secondary font-headline font-bold text-xs uppercase tracking-tighter">
-                  Warranty Support
+                  Service Response
                 </div>
-                <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Parts & Labour</div>
+                <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">When urgent</div>
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@ export function ReviewsPage() {
                   </p>
 
                   <div className="mt-auto flex items-center gap-4 border-t border-white/10 pt-8">
-                    <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-primary font-headline font-black text-lg shadow-lg shadow-secondary/20">
+                    <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-slate-50 font-headline font-black text-lg shadow-lg shadow-secondary/20">
                       {highlight.initials}
                     </div>
                     <div>
@@ -231,7 +231,7 @@ export function ReviewsPage() {
                       <div className="flex items-center gap-2">
                         <span className="text-xs text-slate-500 font-mono italic">{highlight.eyebrow}</span>
                         <span className="w-1 h-1 bg-slate-700 rounded-full"></span>
-                        <span className="text-[10px] text-secondary font-headline uppercase font-bold tracking-widest">Banda Focus</span>
+                        <span className="text-[10px] text-secondary font-headline uppercase font-bold tracking-widest">JA Focus</span>
                       </div>
                     </div>
                   </div>
@@ -279,7 +279,7 @@ export function ReviewsPage() {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 bg-white text-primary px-8 py-4 rounded font-headline font-black uppercase tracking-widest text-xs hover:bg-secondary transition-colors w-full sm:w-auto justify-center"
               >
-                Visit BandaElectric.com
+                Visit JAElectricInc.ca
                 <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </a>
 

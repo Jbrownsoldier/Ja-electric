@@ -4,7 +4,7 @@ import { company } from '../../config/company';
 
 const trustItems = [
  { icon: Clock, label: '24-Hour Phone Service' },
- { icon: Shield, label: '2 Master Electricians' },
+ { icon: Shield, label: 'Licensed Electricians' },
  { icon: Search, label: 'Root-Cause Diagnosis' },
  { icon: Zap, label: 'All Major Sectors' },
 ];
@@ -18,7 +18,7 @@ export function TroubleHero() {
  <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
  <div className="order-2 lg:order-1">
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm md:text-base mb-4">
- Preventative Maintenance &amp; Emergency Repair · Lethbridge &amp; Southern Alberta
+ Preventative Maintenance &amp; Emergency Repair · Steinbach &amp; Surrounding Region
  </p>
 
  <h1 className="text-white mb-6">
@@ -26,10 +26,10 @@ export function TroubleHero() {
  </h1>
 
  <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
- Banda Electric supports industrial, commercial, agricultural, and residential
- clients with preventative maintenance, emergency repair, power quality
- analysis, and line location services designed to reduce downtime and restore
- confidence quickly.
+ JA Electric supports residential, commercial, agricultural, and specialty
+ clients with preventative maintenance, emergency repair, inspections,
+ infra-red scanning, and underground cable locating services designed to
+ reduce downtime and restore confidence quickly.
  </p>
 
  <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -78,7 +78,7 @@ function TroubleHeroVisual() {
  <div className="flex items-center justify-between mb-4">
  <div className="flex items-center gap-3">
  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
- <Search className="w-6 h-6 text-primary"/>
+ <Search className="w-6 h-6 text-slate-50"/>
  </div>
  <div>
  <p className="text-white font-semibold">Troubleshooting</p>
@@ -125,11 +125,11 @@ function TroubleHeroVisual() {
  <div className="flex items-center justify-between p-4 bg-surface-container-low rounded-xl">
  <div>
  <p className="text-gray-500 text-sm">Warranty</p>
- <p className="font-bold text-gray-900 text-xl mt-0.5">5-Year</p>
+ <p className="font-bold text-white text-xl mt-0.5">24-Hr</p>
  </div>
  <div className="text-right">
  <p className="text-gray-500 text-sm">Coverage</p>
- <p className="font-bold text-gray-900 text-xl mt-0.5">Southern AB</p>
+ <p className="font-bold text-white text-xl mt-0.5">300 km Area</p>
  </div>
  </div>
  </div>
@@ -141,8 +141,8 @@ function TroubleHeroVisual() {
  <Shield className="w-5 h-5 text-secondary"/>
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm">Lethbridge Based</p>
- <p className="text-gray-500 text-xs">Serving Southern Alberta</p>
+ <p className="font-semibold text-white text-sm">Steinbach Based</p>
+ <p className="text-gray-500 text-xs">Serving the surrounding region</p>
  </div>
  </div>
  </div>

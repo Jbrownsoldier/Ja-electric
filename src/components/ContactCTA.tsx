@@ -20,7 +20,7 @@ export function ContactCTA() {
               ESTABLISH <br/><span className="text-secondary text-glow">CONNECTIVITY.</span>
             </h2>
             <p className="text-on-primary-container text-lg max-w-md leading-relaxed">
-              Tell us about your project and we&apos;ll connect you with the right Banda Electric crew for it.
+              Tell us about your project and we&apos;ll connect you with the right JA Electric team for it.
             </p>
           </header>
 
@@ -69,7 +69,7 @@ export function ContactCTA() {
               <div className="absolute inset-0 grid-pulse opacity-10 pointer-events-none" />
               
               <div className="relative z-10 flex flex-col items-center">
-                <div className="mb-8 p-4 rounded-full bg-secondary/10 border border-secondary/20 shadow-[0_0_30px_rgba(246,255,3,0.18)]">
+                <div className="mb-8 p-4 rounded-full bg-secondary/10 border border-secondary/20 shadow-[0_0_30px_rgba(18,146,232,0.2)]">
                   <Terminal className="w-12 h-12 text-secondary animate-pulse" />
                 </div>
                 
@@ -78,12 +78,12 @@ export function ContactCTA() {
                 </h3>
                 
                 <p className="text-slate-400 mb-10 max-w-sm leading-relaxed">
-                  Use the guided quote flow to send your project scope, timing, and location directly to Banda Electric.
+                  Use the guided quote flow to send your project scope, timing, and location directly to JA Electric.
                 </p>
 
                 <button 
                   onClick={openQuoteModal}
-                  className="hidden md:group relative px-12 py-5 bg-secondary text-primary font-headline font-black text-xl uppercase tracking-widest rounded-lg shadow-[0_0_20px_rgba(246,255,3,0.24)] hover:shadow-[0_0_40px_rgba(246,255,3,0.32)] transform hover:-translate-y-1 transition-all overflow-hidden"
+                  className="hidden md:group relative px-12 py-5 bg-secondary text-slate-50 font-headline font-black text-xl uppercase tracking-widest rounded-lg shadow-[0_0_20px_rgba(18,146,232,0.24)] hover:shadow-[0_0_40px_rgba(18,146,232,0.32)] transform hover:-translate-y-1 transition-all overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center gap-3">
                     Start Interactive Quote <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />

@@ -1,12 +1,12 @@
 import { ShieldCheck, BadgeCheck, Home, ClipboardList, Wrench, Star } from 'lucide-react';
 
 const items = [
- { icon: ShieldCheck, label: '2 Master Electricians', microcopy: 'Experienced agricultural support' },
- { icon: BadgeCheck, label: 'Five-Year Warranty', microcopy: 'Parts and labour support' },
+ { icon: ShieldCheck, label: 'Licensed Electricians', microcopy: 'Experienced agricultural support' },
+ { icon: BadgeCheck, label: 'Quality Focused', microcopy: 'Safe, reliable work' },
  { icon: Home, label: 'Farm Facility Experience', microcopy: 'Seed plants to shops' },
  { icon: ClipboardList, label: 'Design-Build Support', microcopy: 'From planning to execution' },
  { icon: Wrench, label: 'Maintenance & Repair', microcopy: 'Built for working sites' },
- { icon: Star, label: 'Southern Alberta Coverage', microcopy: 'Lethbridge-based service' },
+ { icon: Star, label: 'Regional Coverage', microcopy: 'Steinbach-based service' },
 ];
 
 export function RewiringTrustBar() {
@@ -27,7 +27,7 @@ export function RewiringTrustBar() {
  <item.icon className="w-5 h-5 text-secondary"strokeWidth={1.75} />
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm leading-snug">{item.label}</p>
+ <p className="font-semibold text-white text-sm leading-snug">{item.label}</p>
  <p className="text-gray-500 text-xs mt-0.5 leading-snug">{item.microcopy}</p>
  </div>
  </div>

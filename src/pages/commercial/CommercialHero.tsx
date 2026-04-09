@@ -3,16 +3,16 @@ import { Button } from '../../components/Button';
 import { company } from '../../config/company';
 
 const trustItems = [
- { icon: ShieldCheck, label: '2 Master Electricians' },
+ { icon: ShieldCheck, label: 'Licensed Electricians' },
  { icon: Clock, label: 'Maintenance Contracts' },
  { icon: ClipboardList, label: 'Start-to-Finish Delivery' },
- { icon: Award, label: '40+ Years Combined' },
+ { icon: Award, label: 'Established 2010' },
 ];
 
 const stats = [
- { value: '2', label: 'Master Electricians' },
- { value: '5-Yr', label: 'Warranty' },
- { value: 'Local', label: 'Lethbridge Based' },
+ { value: 'Yes', label: 'Licensed Team' },
+ { value: '24-Hr', label: 'Service' },
+ { value: 'Local', label: 'Steinbach Based' },
  { value: '24-Hr', label: 'Phone Service' },
 ];
 
@@ -25,7 +25,7 @@ export function CommercialHero() {
  <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
  <div className="order-2 lg:order-1">
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm md:text-base mb-4">
- Commercial Electrical · Lethbridge &amp; Southern Alberta
+ Commercial Electrical · Steinbach &amp; Surrounding Region
  </p>
 
  <h1 className="text-white mb-6">
@@ -33,9 +33,9 @@ export function CommercialHero() {
  </h1>
 
  <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
- From maintenance contracts to new build and build-to-suit projects, Banda
- Electric delivers commercial electrical work with a start-to-finish approach
- that keeps standards high and projects moving across Southern Alberta.
+ From maintenance contracts to new build and upgrade projects, JA Electric
+ delivers commercial electrical work with a start-to-finish approach that
+ keeps standards high and projects moving across the surrounding region.
  </p>
 
  <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -84,7 +84,7 @@ function CommercialHeroVisual({ stats }: { stats: typeof stats }) {
  <div className="flex items-center justify-between mb-4">
  <div className="flex items-center gap-3">
  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
- <Building2 className="w-6 h-6 text-primary"/>
+ <Building2 className="w-6 h-6 text-slate-50"/>
  </div>
  <div>
  <p className="text-white font-semibold">Commercial Electrical</p>
@@ -97,7 +97,7 @@ function CommercialHeroVisual({ stats }: { stats: typeof stats }) {
  </span>
  </div>
  <div className="flex gap-2 flex-wrap">
- {['Southern Alberta', 'Build-to-Suit', 'Maintenance Contracts'].map((tag) => (
+ {['Regional Coverage', 'Project Support', 'Maintenance Contracts'].map((tag) => (
  <span key={tag} className="px-3 py-1 bg-secondary/20 text-secondary text-xs font-medium rounded-full">
  {tag}
  </span>
@@ -116,7 +116,7 @@ function CommercialHeroVisual({ stats }: { stats: typeof stats }) {
  >
  <div className="flex items-center gap-3">
  <CheckCircle2 className="w-4 h-4 text-secondary shrink-0"strokeWidth={2} />
- <span className="text-gray-700 text-sm font-medium">{item.label}</span>
+ <span className="text-gray-200 text-sm font-medium">{item.label}</span>
  </div>
  <span className="text-gray-400 text-xs whitespace-nowrap">{item.tag}</span>
  </div>
@@ -127,7 +127,7 @@ function CommercialHeroVisual({ stats }: { stats: typeof stats }) {
  <div className="grid grid-cols-4 gap-2">
  {stats.map((stat) => (
  <div key={stat.label} className="text-center p-3 bg-surface-container-low rounded-xl">
- <p className="font-bold text-primary text-lg leading-none">{stat.value}</p>
+ <p className="font-bold text-white text-lg leading-none">{stat.value}</p>
  <p className="text-gray-500 text-[10px] mt-1 leading-tight">{stat.label}</p>
  </div>
  ))}
@@ -141,8 +141,8 @@ function CommercialHeroVisual({ stats }: { stats: typeof stats }) {
  <Clock className="w-5 h-5 text-secondary"/>
  </div>
  <div>
- <p className="font-semibold text-gray-900 text-sm">Locally Owned</p>
- <p className="text-gray-500 text-xs">Serving Southern Alberta</p>
+ <p className="font-semibold text-white text-sm">Locally Owned</p>
+ <p className="text-gray-500 text-xs">Serving the surrounding region</p>
  </div>
  </div>
  </div>

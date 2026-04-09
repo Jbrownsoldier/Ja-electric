@@ -12,7 +12,7 @@ export function HomeServicesPreview() {
             <div className="max-w-2xl">
                 <span className="text-secondary font-headline uppercase font-black tracking-widest text-sm mb-4 block">Core Services</span>
                 <h2 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">Electrical <span className="text-secondary">Coverage</span></h2>
-                <p className="text-slate-400 text-base sm:text-lg leading-relaxed">Banda Electric serves industrial, commercial, residential, and agricultural clients across Southern Alberta.</p>
+                <p className="text-slate-400 text-base sm:text-lg leading-relaxed">JA Electric provides residential, commercial, agricultural, maintenance, and specialty electrical support from Steinbach across the surrounding region.</p>
             </div>
             <Link to="/services" className="hidden md:flex items-center gap-2 text-white hover:text-secondary font-headline font-bold uppercase tracking-widest text-xs transition-colors group">
                 View All Operations 
@@ -24,8 +24,8 @@ export function HomeServicesPreview() {
             <ScrollRevealItem>
               <div className="service-card group h-full">
                   <Factory className="card-icon mb-6 w-10 h-10" />
-                  <h3 className="text-xl font-headline font-bold text-white uppercase tracking-tight mb-4">Industrial Electrical</h3>
-                  <p className="text-sm text-slate-400 leading-relaxed">Specialized industrial work, plant support, maintenance, and power distribution handled by experienced master electricians.</p>
+                  <h3 className="text-xl font-headline font-bold text-white uppercase tracking-tight mb-4">Specialty Electrical</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed">Design builds, generators, communications, audio, bucket truck service, and specialty project support handled with practical field experience.</p>
               </div>
             </ScrollRevealItem>
             
@@ -33,7 +33,7 @@ export function HomeServicesPreview() {
               <div className="service-card group h-full">
                   <Building2 className="card-icon mb-6 w-10 h-10" />
                   <h3 className="text-xl font-headline font-bold text-white uppercase tracking-tight mb-4">Commercial Electrical</h3>
-                  <p className="text-sm text-slate-400 leading-relaxed">Commercial upgrades, build-outs, maintenance, and service work designed to keep properties safe and operational.</p>
+                  <p className="text-sm text-slate-400 leading-relaxed">Commercial installations, maintenance, and project support designed to keep business properties safe, efficient, and ready to work.</p>
               </div>
             </ScrollRevealItem>
 
@@ -41,7 +41,7 @@ export function HomeServicesPreview() {
               <div className="service-card group h-full">
                   <Home className="card-icon mb-6 w-10 h-10" />
                   <h3 className="text-xl font-headline font-bold text-white uppercase tracking-tight mb-4">Residential &amp; Agricultural</h3>
-                  <p className="text-sm text-slate-400 leading-relaxed">Homes, acreages, shops, barns, seed plants, and feed mills all get the same quality-focused electrical care.</p>
+                  <p className="text-sm text-slate-400 leading-relaxed">Homes, farms, shops, outbuildings, and service calls all get the same safety-focused electrical care from JA Electric.</p>
               </div>
             </ScrollRevealItem>
         </ScrollReveal>

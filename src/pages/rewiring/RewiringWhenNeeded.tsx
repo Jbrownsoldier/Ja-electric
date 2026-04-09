@@ -72,14 +72,14 @@ const triggers: Trigger[] = [
  urgency: 'Inspect & Assess',
  title: 'You Want a Local Long-Term Electrical Partner',
  description:
- 'Agricultural operators often need more than a one-time install. Banda Electric is built to be a long-term Southern Alberta partner for maintenance, upgrades, and future expansion.',
+ 'Agricultural operators often need more than a one-time install. JA Electric is built to be a long-term regional partner for maintenance, upgrades, and future expansion.',
  detail: 'Built for ongoing support, not one-off jobs',
  },
 ];
 
 const urgencyStyle: Record<Urgency, string> = {
  'Replace Now': 'bg-red-50 text-red-600 border-red-100',
- 'Upgrade Required': 'bg-secondary/15 text-primary border-secondary/30',
+    'Upgrade Required': 'bg-secondary/15 text-secondary border-secondary/30',
  'Inspect & Assess': 'bg-zinc-100 text-zinc-700 border-zinc-200',
 };
 
@@ -91,7 +91,7 @@ export function RewiringWhenNeeded() {
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
  When Agricultural Support Is Needed
  </p>
- <h2 className="text-primary mb-4">
+ <h2 className="text-white mb-4">
  Signals Your Agricultural Electrical Scope Needs Attention
  </h2>
  <p className="text-gray-500 text-lg leading-relaxed">
@@ -124,14 +124,14 @@ function TriggerCard({ icon: Icon, urgency, title, description, detail }: Trigge
  <div className="group p-6 rounded-2xl bg-surface hover:border-secondary/30 hover:shadow-ambient transition-all duration-300 flex flex-col">
  <div className="flex items-start justify-between gap-3 mb-4">
  <div className="w-10 h-10 rounded-xl bg-secondary/10 group-hover:bg-secondary flex items-center justify-center transition-colors duration-300 shrink-0">
- <Icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-5 h-5 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border shrink-0 ${urgencyStyle[urgency]}`}>
  {urgency}
  </span>
  </div>
 
- <h3 className="text-primary font-bold text-base mb-2 leading-snug">{title}</h3>
+ <h3 className="text-white font-bold text-base mb-2 leading-snug">{title}</h3>
  <p className="text-gray-500 text-sm leading-relaxed flex-1">{description}</p>
 
  <div className="mt-4 pt-4">

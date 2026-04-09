@@ -5,19 +5,19 @@ const reasons = [
  icon: ShieldCheck,
  title: 'Locally Owned, Highly Qualified',
  description:
- 'Banda Electric emphasizes local ownership, master-level electrical leadership, and a trained support team that stays current on safety, technology, and field standards.',
+ 'JA Electric emphasizes local accountability, licensed electrical leadership, and a trained support team that stays current on safety, technology, and field standards.',
  },
  {
  icon: Clock,
  title: 'Start-to-Finish Commercial Delivery',
  description:
- 'From maintenance contracts through new build and build-to-suit work, Banda Electric offers the kind of continuity commercial clients rely on.',
+ 'From maintenance contracts through new build and project support, JA Electric offers the kind of continuity commercial clients rely on.',
  },
  {
  icon: User,
  title: 'Built Around Deadlines and Quality',
  description:
- 'Commercial clients count on Banda Electric to hit deadlines while maintaining a very high standard of quality.',
+ 'Commercial clients count on JA Electric to hit deadlines while maintaining a very high standard of quality.',
  },
  {
  icon: FileText,
@@ -29,13 +29,13 @@ const reasons = [
  icon: Wrench,
  title: 'Maintenance and Emergency Support',
  description:
- 'Commercial clients need more than an install crew. Banda Electric also highlights preventative maintenance, emergency repair, and quick-turn support for properties that cannot afford long downtime.',
+ 'Commercial clients need more than an install crew. JA Electric also highlights preventative maintenance, emergency repair, and quick-turn support for properties that cannot afford long downtime.',
  },
  {
  icon: MessageSquare,
  title: 'Warranty and Safety Mindset',
  description:
- 'A five-year warranty and a strong safety commitment give commercial owners and managers added reassurance before awarding work.',
+ 'A strong safety commitment and practical follow-through give commercial owners and managers added reassurance before awarding work.',
  },
 ];
 
@@ -46,13 +46,13 @@ export function CommercialWhyChoose() {
  <div className="grid lg:grid-cols-[1fr_1.6fr] gap-12 lg:gap-20 items-start">
  <div className="lg:sticky lg:top-28">
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
- Why Banda Electric
+ Why JA Electric
  </p>
- <h2 className="text-primary mb-5">
+ <h2 className="text-white mb-5">
  Commercial Support Backed by Local Accountability
  </h2>
  <p className="text-gray-500 text-base leading-relaxed mb-8">
- Commercial clients choose Banda Electric for continuity, accountability,
+ Commercial clients choose JA Electric for continuity, accountability,
  safety, and reliable support long after the initial project is complete.
  </p>
 
@@ -62,11 +62,11 @@ export function CommercialWhyChoose() {
  </p>
  <ul className="space-y-3.5">
  {[
- 'Locally owned and operated in Lethbridge',
- 'Two master electricians leading the work',
+ 'Locally based in Steinbach',
+ 'Licensed electricians leading the work',
  'Detailed quotes from senior staff',
  'Maintenance contracts and new builds supported',
- 'Five-year warranty on supported work',
+ 'Quality-focused workmanship on supported work',
  'Safety-first culture on every site',
  'Quick turnaround through 24-hour phone service',
  ].map((item) => (
@@ -78,7 +78,7 @@ export function CommercialWhyChoose() {
  </ul>
 
  <div className="mt-7 pt-6">
- <button className="w-full inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary text-primary font-semibold px-6 py-3.5 rounded-xl transition-all duration-200 group text-sm">
+ <button className="w-full inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary text-slate-50 font-semibold px-6 py-3.5 rounded-xl transition-all duration-200 group text-sm">
  Request a Commercial Quote
  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform duration-200"/>
  </button>
@@ -107,9 +107,9 @@ function ReasonCard({ icon: Icon, title, description }: ReasonCardProps) {
  return (
  <div className="group p-6 rounded-2xl bg-surface hover:border-secondary/30 hover:shadow-ambient transition-all duration-300">
  <div className="w-10 h-10 rounded-xl bg-secondary/10 group-hover:bg-secondary flex items-center justify-center transition-colors duration-300 mb-4">
- <Icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-5 h-5 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
- <h3 className="text-primary font-bold text-base mb-2 leading-snug">{title}</h3>
+ <h3 className="text-white font-bold text-base mb-2 leading-snug">{title}</h3>
  <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
  </div>
  );

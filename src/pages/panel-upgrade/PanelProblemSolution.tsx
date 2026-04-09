@@ -15,7 +15,7 @@ const solutions = [
 "Documented upgrades to power distribution, life-safety, and specialty lighting systems",
 "Emergency repair support that keeps downtime from stretching into lost business hours",
 "Experienced field crews for industrial, commercial, agricultural, and airport-related work",
-"A five-year warranty backed by a locally owned Southern Alberta contractor",
+"Practical specialty support from a locally based electrical contractor",
 ];
 
 export function PanelProblemSolution() {
@@ -26,13 +26,13 @@ export function PanelProblemSolution() {
  <p className="text-secondary font-semibold tracking-wide uppercase text-sm mb-3">
  Downtime &amp; The Fix
  </p>
- <h2 className="text-primary mb-4">
+ <h2 className="text-white mb-4">
  Reliable Facilities Depend on Reliable Electrical Support
  </h2>
  <p className="text-gray-500 text-lg leading-relaxed">
  When industrial electrical systems are undersized, aging, or poorly maintained,
  the cost shows up fast in lost productivity, safety risk, and reactive repair
- calls. Banda Electric is built to step in before those issues snowball.
+ calls. JA Electric is built to step in before those issues snowball.
  </p>
  </div>
 
@@ -43,17 +43,16 @@ export function PanelProblemSolution() {
 
  <div className="mt-8 p-6 md:p-8 bg-secondary/12 border border-secondary/30 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center gap-5">
  <div className="w-11 h-11 rounded-xl bg-secondary/20 flex items-center justify-center shrink-0">
- <AlertTriangle className="w-5 h-5 text-primary"strokeWidth={1.75} />
+ <AlertTriangle className="w-5 h-5 text-secondary"strokeWidth={1.75} />
  </div>
  <div className="flex-1">
- <p className="font-semibold text-primary mb-1">Planning a complex facility upgrade?</p>
- <p className="text-primary/80 text-sm leading-relaxed">
- Banda Electric takes on large and complex scopes, especially industrial,
- commercial, and airport-lighting related projects where experienced planning
- and reliable execution matter.
+ <p className="font-semibold text-white mb-1">Planning a complex facility upgrade?</p>
+ <p className="text-gray-200 text-sm leading-relaxed">
+ JA Electric takes on large and complex scopes where experienced planning,
+ coordination, and reliable execution matter.
  </p>
  </div>
- <button className="inline-flex items-center gap-2 text-primary font-semibold text-sm shrink-0 hover:text-black transition-colors group">
+ <button className="inline-flex items-center gap-2 text-secondary font-semibold text-sm shrink-0 hover:text-sky-300 transition-colors group">
  Request a Quote
  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform duration-200"/>
  </button>
@@ -71,7 +70,7 @@ function ProblemCard() {
  <AlertTriangle className="w-5 h-5 text-red-500"strokeWidth={1.75} />
  </div>
  <div>
- <p className="font-bold text-primary text-base leading-snug">The Problem</p>
+ <p className="font-bold text-white text-base leading-snug">The Problem</p>
  <p className="text-gray-500 text-xs">What creates preventable downtime</p>
  </div>
  </div>
@@ -96,7 +95,7 @@ function SolutionCard() {
  </div>
  <div>
  <p className="font-bold text-white text-base leading-snug">The Solution</p>
- <p className="text-gray-400 text-xs">What Banda brings to the site</p>
+ <p className="text-gray-400 text-xs">What JA Electric brings to the site</p>
  </div>
  </div>
  <ul className="space-y-3.5">

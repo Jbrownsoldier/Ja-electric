@@ -29,7 +29,7 @@ const STEPS = [
 ];
 
 const SERVICES = [
-  { id: 'industrial', label: 'Industrial', icon: Zap, color: 'from-secondary/30 to-white/5' },
+  { id: 'specialty', label: 'Specialty', icon: Zap, color: 'from-secondary/30 to-white/5' },
   { id: 'commercial', label: 'Commercial', icon: Building2, color: 'from-secondary/30 to-white/10' },
   { id: 'residential', label: 'Residential', icon: Home, color: 'from-white/10 to-secondary/25' },
   { id: 'agricultural', label: 'Agricultural', icon: Battery, color: 'from-secondary/20 to-white/10' },
@@ -37,7 +37,7 @@ const SERVICES = [
 ];
 
 export const QuoteModal = () => {
-  const { isOpen, closeQuoteModal } = useQuoteModal();
+  const { isOpen, closeQuoteModal, draft } = useQuoteModal();
   const [currentStep, setCurrentStep] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -54,6 +54,15 @@ export const QuoteModal = () => {
   useEffect(() => {
     if (isOpen) {
       setBootSequence(true);
+      setCurrentStep(draft?.service_type ? 1 : 0);
+      setFormData({
+        service_type: draft?.service_type ?? '',
+        name: '',
+        email: '',
+        phone: '',
+        message: draft?.message ?? '',
+        technical_notes: draft?.technical_notes ?? ''
+      });
       const timer = setTimeout(() => setBootSequence(false), 800);
       return () => clearTimeout(timer);
     } else {
@@ -67,7 +76,7 @@ export const QuoteModal = () => {
         technical_notes: ''
       });
     }
-  }, [isOpen]);
+  }, [draft, isOpen]);
 
   const nextStep = () => setCurrentStep(prev => Math.min(prev + 1, STEPS.length - 1));
   const prevStep = () => setCurrentStep(prev => Math.max(prev - 1, 0));
@@ -77,7 +86,7 @@ export const QuoteModal = () => {
   const TRANSMISSION_STAGES = [
     "REVIEWING PROJECT DETAILS...",
     "CATEGORIZING SERVICE TYPE...",
-    "NOTIFYING THE BANDA TEAM...",
+    "NOTIFYING THE JA ELECTRIC TEAM...",
     "QUEUING FOLLOW-UP...",
     "REQUEST CONFIRMED."
   ];
@@ -132,7 +141,7 @@ export const QuoteModal = () => {
         initial={{ scale: 0.9, opacity: 0, y: 20 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.9, opacity: 0, y: 20 }}
-        className="relative w-full max-w-2xl bg-surface-container-low border border-secondary/30 rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(246,255,3,0.14)]"
+        className="relative w-full max-w-2xl bg-surface-container-low border border-secondary/30 rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(18,146,232,0.16)]"
       >
         {/* CRT Scanline Overlay */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] z-50 bg-[length:100%_2px,3px_100%]" />
@@ -225,6 +234,11 @@ export const QuoteModal = () => {
                   exit={{ opacity: 0, x: -20 }}
                   className="space-y-6"
                 >
+                  {draft?.metadata?.source === 'guided-chat' && (
+                    <div className="rounded-xl border border-secondary/20 bg-secondary/10 px-4 py-3 text-xs text-slate-300">
+                      Guided assistant details were added to your quote request. Just confirm your contact info to continue.
+                    </div>
+                  )}
                   <div className="relative group">
                     <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 group-focus-within:text-secondary transition-colors" />
                     <input 
@@ -266,7 +280,7 @@ export const QuoteModal = () => {
                     <button 
                       onClick={nextStep}
                       disabled={!formData.name || !formData.email}
-                      className="flex-[2] py-4 rounded-xl bg-secondary text-primary font-bold hover:brightness-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-[0_0_20px_rgba(246,255,3,0.22)] flex items-center justify-center gap-2 font-mono uppercase text-sm"
+                      className="flex-[2] py-4 rounded-xl bg-secondary text-slate-50 font-bold hover:brightness-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-[0_0_20px_rgba(18,146,232,0.24)] flex items-center justify-center gap-2 font-mono uppercase text-sm"
                     >
                       Continue <ChevronRight className="w-4 h-4" />
                     </button>
@@ -282,6 +296,11 @@ export const QuoteModal = () => {
                   exit={{ opacity: 0, x: -20 }}
                   className="space-y-6"
                 >
+                  {draft?.metadata?.source === 'guided-chat' && formData.message && (
+                    <div className="rounded-xl border border-secondary/20 bg-secondary/10 px-4 py-3 text-xs text-slate-300 whitespace-pre-line">
+                      {formData.message}
+                    </div>
+                  )}
                   <div className="space-y-4">
                     <div className="relative group">
                       <MessageSquare className="absolute left-4 top-6 w-5 h-5 text-slate-500 group-focus-within:text-secondary transition-colors" />
@@ -317,7 +336,7 @@ export const QuoteModal = () => {
                     <button 
                       onClick={handleSubmit}
                       disabled={isSubmitting || !formData.message}
-                      className="flex-[2] py-4 rounded-xl bg-secondary text-primary font-bold hover:brightness-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-[0_0_20px_rgba(246,255,3,0.24)] flex items-center justify-center gap-2 border border-secondary/60 font-mono uppercase text-sm min-w-[240px]"
+                      className="flex-[2] py-4 rounded-xl bg-secondary text-slate-50 font-bold hover:brightness-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-[0_0_20px_rgba(18,146,232,0.26)] flex items-center justify-center gap-2 border border-secondary/60 font-mono uppercase text-sm min-w-[240px]"
                     >
                       {isSubmitting ? (
                         <>
@@ -347,13 +366,13 @@ export const QuoteModal = () => {
                       animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0.8, 0.5] }}
                       transition={{ duration: 2, repeat: Infinity }}
                     />
-                    <div className="relative w-24 h-24 bg-secondary rounded-full flex items-center justify-center border-4 border-secondary/60 shadow-[0_0_40px_rgba(246,255,3,0.32)]">
+                    <div className="relative w-24 h-24 bg-secondary rounded-full flex items-center justify-center border-4 border-secondary/60 shadow-[0_0_40px_rgba(18,146,232,0.34)]">
                       <CheckCircle2 className="w-12 h-12 text-primary" />
                     </div>
                   </div>
                   <h3 className="text-3xl font-bold text-white mb-2 font-mono uppercase tracking-tighter">Request Received</h3>
                   <p className="text-slate-400 mb-8 max-w-sm font-mono text-sm leading-relaxed">
-                    YOUR PROJECT DETAILS HAVE BEEN SENT TO BANDA ELECTRIC. A TEAM MEMBER WILL FOLLOW UP TO REVIEW SCOPE, TIMING, AND NEXT STEPS.
+                    YOUR PROJECT DETAILS HAVE BEEN SENT TO JA ELECTRIC. A TEAM MEMBER WILL FOLLOW UP TO REVIEW SCOPE, TIMING, AND NEXT STEPS.
                   </p>
                   <button 
                     onClick={closeQuoteModal}
@@ -375,7 +394,7 @@ export const QuoteModal = () => {
             <div className="w-2 h-2 rounded-full bg-slate-800" />
           </div>
           <div className="text-[9px] font-mono text-slate-600 uppercase tracking-widest">
-            Banda Electric // Southern Alberta coverage
+            JA Electric // Steinbach regional coverage
           </div>
         </div>
       </motion.div>

@@ -12,52 +12,52 @@ const HOME_FAQS = [
   {
     question: 'Are you locally owned and operated?',
     answer:
-      'Yes. Banda Electric is Lethbridge-owned and operated and serves clients throughout Southern Alberta with a local crew that understands the pace and demands of the region.',
+      'JA Electric is based in Steinbach and provides electrical services across a broad 300 kilometre service area.',
   },
   {
     question: 'What kinds of electrical work do you handle?',
     answer:
-      'Banda Electric handles industrial, residential, agricultural, and commercial electrical work, along with preventative maintenance, power quality analysis, line location, airport light maintenance, and emergency repair.',
+      'JA Electric handles residential, commercial, agricultural, maintenance, repair, inspection, smart home, generator, communications, directional boring, and specialty electrical work.',
   },
   {
-    question: 'Do you have master electricians on staff?',
+    question: 'Are your electricians licensed?',
     answer:
-      'Yes. Banda Electric is led by two master electricians and a highly trained, industry-certified team with more than 40 years of combined experience.',
+      'Yes. JA Electric highlights licensed electricians and experienced staff committed to safe, reliable workmanship.',
   },
   {
     question: 'Do you handle maintenance and emergency repair?',
     answer:
-      'Yes. Preventative maintenance and emergency repair are core Banda Electric services, and the company advertises 24-hour phone service for quick turnaround when urgent electrical issues come up.',
+      'Yes. Maintenance, repairs, inspections, and 24-hour service are part of JA Electric’s offering for clients who need fast support.',
   },
   {
     question: 'Do you work on agricultural facilities?',
     answer:
-      'Yes. Banda Electric specifically serves agricultural clients, including seed plants, feed mills, farms, and other rural operations that need dependable power, upgrades, maintenance, and design-build support.',
+      'Yes. JA Electric provides agricultural electrical services for farms and facilities that need reliable power, upgrades, repairs, and ongoing support.',
   },
   {
     question: 'Can you take on commercial and industrial projects?',
     answer:
-      'Yes. Banda Electric handles industrial and commercial electrical scopes ranging from upgrades and maintenance through to new installations, with a focus on quality, safety, and well-planned execution.',
+      'Yes. JA Electric supports commercial properties and specialty project scopes with installations, upgrades, maintenance, and design-build style planning.',
   },
   {
     question: 'Do you offer residential electrical services too?',
     answer:
-      'Absolutely. Residential service is one of Banda Electric’s core offerings, whether you need repairs, renovations, lighting, service upgrades, garage power, or whole-home electrical planning.',
+      'Absolutely. JA Electric provides residential service calls, repairs, upgrades, smart home work, generators, surge protection, and renovation support.',
   },
   {
     question: 'How do quotes work?',
     answer:
-      'Banda Electric emphasizes quick, professional estimating. A senior member of the team prepares detailed quotes with an eye toward quality, practical configurations, and cost-effective long-term use.',
+      'JA Electric encourages clients to call or send project details so the team can review the scope and recommend the right next step.',
   },
   {
     question: 'What areas do you serve?',
     answer:
-      'Banda Electric is based in Lethbridge and promotes service across Southern Alberta. For nearby communities and rural jobs, the fastest way to confirm coverage is to call or request a quote.',
+      'JA Electric is based in Steinbach and advertises electrical service across a 300 kilometre area. For nearby communities and rural jobs, the fastest way to confirm coverage is to call or request a quote.',
   },
   {
     question: 'Do you stand behind your work?',
     answer:
-      'Yes. Banda Electric stands behind its work with a five-year warranty and a strong focus on safety, training, and customer satisfaction.',
+      'Yes. JA Electric emphasizes quality, safety, and customer satisfaction on every project.',
   },
 ];
 
@@ -65,8 +65,8 @@ export function HomePage() {
   return (
     <>
       <SEO
-        title="Electrical Contractor in Lethbridge | Banda Electric"
-        description="Banda Electric is a Lethbridge electrical contractor serving Southern Alberta with industrial, residential, agricultural, and commercial electrical services, preventative maintenance, and emergency repair."
+        title="Electrical Services in Steinbach | JA Electric"
+        description="JA Electric provides residential, commercial, agricultural, maintenance, and specialty electrical services from Steinbach across a 300 kilometre service area."
         canonical="/"
       />
       <JsonLd schema={faqPageSchema(HOME_FAQS)} />

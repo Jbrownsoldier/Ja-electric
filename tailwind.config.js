@@ -5,36 +5,36 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0b0b0b',
-          container: '#181818',
+          DEFAULT: '#05070a',
+          container: '#0d131a',
         },
         secondary: {
-          DEFAULT: '#F6FF03',
-          fixed: '#FCFFA6',
-          container: '#F6FF03',
+          DEFAULT: '#1292e8',
+          fixed: '#7fd3ff',
+          container: '#173149',
         },
-        'on-secondary-container': '#0b0b0b',
+        'on-secondary-container': '#eaf6ff',
         tertiary: {
           DEFAULT: '#f24236',
         },
         surface: {
-          DEFAULT: '#141414',
+          DEFAULT: '#0a0f14',
           container: {
-            lowest: '#080808',
-            low: '#111111',
-            DEFAULT: '#1d1d1d',
-            highest: '#2b2b2b',
+            lowest: '#060a0f',
+            low: '#0d141c',
+            DEFAULT: '#131c25',
+            highest: '#1d2a38',
           }
         },
         outline: {
-          variant: '#3a3a3a',
+          variant: '#2f4356',
         },
         // High-contrast text scale
         prose: {
-          high:   '#F5F5F2',
-          mid:    '#B7B9B2',
-          low:    '#6D716A',
-          accent: '#F6FF03',
+          high:   '#F4F8FC',
+          mid:    '#B5C2CF',
+          low:    '#708293',
+          accent: '#1292e8',
         }
       },
       fontFamily: {
@@ -56,9 +56,9 @@ export default {
       },
       boxShadow: {
         ambient:  '0 8px 32px rgba(0, 0, 0, 0.28)',
-        'glow-sm': '0 0 16px rgba(246,255,3,0.18)',
-        'glow-md': '0 0 32px rgba(246,255,3,0.24)',
-        'glow-lg': '0 0 64px rgba(246,255,3,0.30)',
+        'glow-sm': '0 0 16px rgba(18,146,232,0.18)',
+        'glow-md': '0 0 32px rgba(18,146,232,0.24)',
+        'glow-lg': '0 0 64px rgba(18,146,232,0.30)',
         'glass':   '0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08)',
         'glass-lg':'0 24px 64px rgba(0,0,0,0.50), inset 0 1px 0 rgba(255,255,255,0.08)',
       },

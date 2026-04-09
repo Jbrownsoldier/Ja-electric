@@ -48,7 +48,7 @@ export function SEO({
       <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Banda Electric branded social share image" />
+      <meta property="og:image:alt" content={`${company.name} branded social share image`} />
       <meta property="og:locale" content="en_CA" />
 
       {/* Twitter Card */}
@@ -58,7 +58,7 @@ export function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:image:type" content="image/jpeg" />
-      <meta name="twitter:image:alt" content="Banda Electric branded social share image" />
+      <meta name="twitter:image:alt" content={`${company.name} branded social share image`} />
     </Helmet>
   );
 }

@@ -8,25 +8,25 @@ const risks = [
  statLabel: 'phone service',
  title: 'Urgent Calls Need a Fast Answer',
  description:
- 'Banda Electric offers 24-hour phone service and quick turnaround for emergencies. That matters when downtime, safety, or site access issues cannot sit until the next business day.',
+ 'JA Electric offers 24-hour service and quick turnaround for emergencies. That matters when downtime, safety, or site access issues cannot sit until the next business day.',
  color: 'red',
  },
  {
  icon: TrendingUp,
- stat: '5-Yr',
- statLabel: 'warranty backing',
+ stat: 'Scan',
+ statLabel: 'inspection support',
  title: 'Repairs Should Hold Up After the Visit',
  description:
- 'Long-term workmanship backed by a five-year warranty positions maintenance and repair as an investment in stability, not just a temporary patch.',
+ 'Maintenance support such as inspections and infra-red scanning positions repair work as an investment in stability, not just a temporary patch.',
  color: 'amber',
  },
  {
  icon: ShieldOff,
  stat: 'Local',
- statLabel: 'Lethbridge based',
+ statLabel: 'Steinbach based',
  title: 'Local Support Simplifies Coordination',
  description:
- "A local contractor that already serves Southern Alberta can move faster, understand the service area, and stay involved after the first visit instead of treating the repair like a one-off dispatch.",
+ "A local contractor that already serves the surrounding region can move faster, understand the service area, and stay involved after the first visit instead of treating the repair like a one-off dispatch.",
  color: 'amber',
  },
  {
@@ -74,7 +74,7 @@ export function TroubleWhyFast() {
  </h2>
  <p className="text-gray-400 text-lg leading-relaxed">
  Preventative maintenance, emergency response, and long-term reliability are
- central to how Banda Electric supports Southern Alberta clients.
+ central to how JA Electric supports clients across the surrounding region.
  </p>
  </div>
 
@@ -91,13 +91,13 @@ export function TroubleWhyFast() {
  </p>
  <p className="text-gray-400 text-sm leading-relaxed">
  If you are dealing with overheating equipment, repeated shutdowns, visible
- arcing, or another active electrical concern, use Banda Electric's 24-hour
+ arcing, or another active electrical concern, use JA Electric's 24-hour
  phone service and get the issue assessed before it escalates.
  </p>
  </div>
  <a
  href={companyLinks.phone}
- className="shrink-0 inline-flex items-center gap-2 bg-secondary hover:bg-secondary text-primary font-semibold px-6 py-3.5 rounded-xl transition-colors duration-200 text-sm"
+ className="shrink-0 inline-flex items-center gap-2 bg-secondary hover:bg-secondary text-slate-50 font-semibold px-6 py-3.5 rounded-xl transition-colors duration-200 text-sm"
  >
  Call Now
  </a>

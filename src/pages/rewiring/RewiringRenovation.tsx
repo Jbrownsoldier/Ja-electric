@@ -12,7 +12,7 @@ const services: RenovationService[] = [
  icon: UtensilsCrossed,
  title: 'Seed Plants',
  description:
-"Banda Electric specifically calls out highly sophisticated seed plants as part of its agricultural work. That makes this route a strong fit for agricultural sites with demanding operational and distribution needs.",
+"JA Electric supports demanding agricultural sites with practical electrical work built around real operational and distribution needs.",
  includes: [
  'Process equipment support',
  'Power distribution planning',
@@ -25,7 +25,7 @@ const services: RenovationService[] = [
  icon: Bath,
  title: 'Feed Mills',
  description:
- 'Feed mills are another agricultural specialty Banda Electric supports, with electrical work tailored to more complex, higher-demand operating environments.',
+ 'Feed mills and similar heavy-use agricultural environments benefit from electrical work tailored to more complex operating conditions.',
  includes: [
  'Heavy-use electrical support',
  'Maintenance planning',
@@ -90,7 +90,7 @@ const services: RenovationService[] = [
  icon: Drill,
  title: 'Design-Build Expansions',
  description:
- 'Banda Electric supports all aspects of agricultural work, from maintenance through design-build project delivery.',
+ 'JA Electric supports agricultural work from maintenance through design-build style project delivery.',
  includes: [
  'Project planning support',
  'Coordinated electrical scope',
@@ -103,7 +103,7 @@ const services: RenovationService[] = [
  icon: Palmtree,
  title: 'Ongoing Facility Maintenance',
  description:
- 'Agricultural operations need support after the initial project is done, which is why Banda Electric treats maintenance as part of the long-term relationship.',
+ 'Agricultural operations need support after the initial project is done, which is why JA Electric treats maintenance as part of the long-term relationship.',
  includes: [
  'Preventative maintenance',
  'Emergency repair access',
@@ -127,7 +127,7 @@ export function RewiringRenovation() {
  </h2>
  <p className="text-gray-400 text-lg leading-relaxed">
  Seed plants, feed mills, barns, outbuildings, and long-term maintenance all
- play a role in the agricultural work Banda Electric supports across Southern Alberta.
+ play a role in the agricultural work JA Electric supports across the surrounding region.
  </p>
  </div>
 
@@ -145,7 +145,7 @@ function RenovationCard({ icon: Icon, title, description, includes }: Renovation
  return (
  <div className="group p-6 rounded-2xl bg-white/[0.02] hover:border-secondary/40 hover:bg-white/[0.05] transition-all duration-300 flex flex-col">
  <div className="w-10 h-10 rounded-xl bg-secondary/10 group-hover:bg-secondary flex items-center justify-center transition-colors duration-300 mb-4">
- <Icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors duration-300"strokeWidth={1.75} />
+ <Icon className="w-5 h-5 text-secondary group-hover:text-slate-50 transition-colors duration-300"strokeWidth={1.75} />
  </div>
 
  <h3 className="text-white font-bold text-base mb-2 leading-snug">{title}</h3>

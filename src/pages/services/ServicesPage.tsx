@@ -7,8 +7,8 @@ export function ServicesPage() {
   return (
     <>
       <SEO
-        title="Electrical Services | Banda Electric | Lethbridge, AB"
-        description="Explore Banda Electric services for industrial, commercial, residential, agricultural, preventative maintenance, and emergency electrical work across Southern Alberta."
+        title="Electrical Services | JA Electric | Steinbach, MB"
+        description="Explore JA Electric services for residential, commercial, agricultural, maintenance, and specialty electrical work across Steinbach and the surrounding region."
         canonical="/services"
       />
       <JsonLd schema={breadcrumbSchema([
@@ -33,13 +33,13 @@ export function ServicesPage() {
             <div className="max-w-4xl">
               <span className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 border border-secondary/30 text-secondary rounded-full text-xs font-headline font-bold tracking-[0.2em] uppercase mb-6">
                 <Zap className="w-3 h-3 animate-pulse" />
-                Banda_Electric
+                JA_Electric
               </span>
               <h1 className="font-headline text-5xl md:text-7xl font-black text-white leading-none tracking-tighter mb-8 uppercase">
                 FIELD-READY <br/><span className="text-secondary">ELECTRICAL.</span>
               </h1>
               <p className="text-slate-300 text-lg md:text-xl max-w-2xl leading-relaxed">
-                Banda Electric serves Southern Alberta with industrial, commercial, residential, and agricultural electrical work, plus preventative maintenance and emergency support.
+                JA Electric serves Steinbach and the surrounding region with specialty, commercial, residential, agricultural, and maintenance electrical work.
               </p>
             </div>
           </div>
@@ -59,25 +59,25 @@ export function ServicesPage() {
               <div className="absolute top-8 right-8 bg-surface border border-secondary/30 text-secondary font-headline font-black p-4 rounded-lg text-4xl shadow-ambient">01</div>
             </div>
             <div className="lg:col-span-5 flex flex-col items-start lg:pl-12">
-              <h2 className="font-headline text-4xl font-bold text-white mb-6 uppercase tracking-tight">Industrial &amp; Commercial</h2>
+              <h2 className="font-headline text-4xl font-bold text-white mb-6 uppercase tracking-tight">Specialty &amp; Commercial</h2>
               <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-                From industrial facilities and complex power distribution to commercial buildings, retail properties, and service spaces, Banda Electric delivers practical electrical support with an eye for quality.
+                From specialty installations and project support to commercial buildings, business properties, and service spaces, JA Electric delivers practical electrical work with an eye for quality.
               </p>
               <ul className="space-y-4 mb-10 w-full">
                 <li className="flex items-center gap-4 p-4 bg-surface/50 border border-white/5 rounded-lg hover:border-secondary/30 hover:bg-surface transition-colors group">
                   <Factory className="text-slate-500 group-hover:text-secondary transition-colors w-6 h-6" />
-                  <span className="font-headline font-bold tracking-wide uppercase text-sm text-slate-300 group-hover:text-secondary">Industrial Installations</span>
+                  <span className="font-headline font-bold tracking-wide uppercase text-sm text-slate-300 group-hover:text-secondary">Specialty Installations</span>
                 </li>
                 <li className="flex items-center gap-4 p-4 bg-surface/50 border border-white/5 rounded-lg hover:border-secondary/30 hover:bg-surface transition-colors group">
                   <HardDrive className="text-slate-500 group-hover:text-secondary transition-colors w-6 h-6" />
-                  <span className="font-headline font-bold tracking-wide uppercase text-sm text-slate-300 group-hover:text-secondary">Preventative Maintenance</span>
+                  <span className="font-headline font-bold tracking-wide uppercase text-sm text-slate-300 group-hover:text-secondary">Project Planning</span>
                 </li>
                 <li className="flex items-center gap-4 p-4 bg-surface/50 border border-white/5 rounded-lg hover:border-secondary/30 hover:bg-surface transition-colors group">
                   <ShieldCheck className="text-slate-500 group-hover:text-secondary transition-colors w-6 h-6" />
-                  <span className="font-headline font-bold tracking-wide uppercase text-sm text-slate-300 group-hover:text-secondary">Power Quality &amp; Line Location</span>
+                  <span className="font-headline font-bold tracking-wide uppercase text-sm text-slate-300 group-hover:text-secondary">Communications &amp; Boring</span>
                 </li>
               </ul>
-              <a href="#contact-form" className="bg-secondary text-primary px-8 py-3 rounded text-xs font-headline font-black uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all shadow-[0_0_20px_rgba(246,255,3,0.2)]">
+              <a href="#contact-form" className="bg-secondary text-slate-50 px-8 py-3 rounded text-xs font-headline font-black uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all shadow-[0_0_20px_rgba(18,146,232,0.22)]">
                 Request a Project Quote
               </a>
             </div>
@@ -91,7 +91,7 @@ export function ServicesPage() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 relative z-10">
               <div className="max-w-xl">
                 <h2 className="font-headline text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-tighter">Residential &amp; Agricultural</h2>
-                <p className="text-slate-400 text-lg">Homes, acreages, barns, feed mills, seed plants, and farm support spaces all benefit from the same Banda Electric standard of workmanship.</p>
+                <p className="text-slate-400 text-lg">Homes, acreages, barns, farm support spaces, and renovation projects all benefit from the same JA Electric standard of workmanship.</p>
               </div>
               <div className="hidden md:flex gap-2">
                 <div className="text-secondary font-headline font-bold tracking-[0.2em] uppercase text-xs">Homes, Shops &amp; Farms</div>
@@ -102,17 +102,17 @@ export function ServicesPage() {
               <div className="bg-surface/80 border border-white/5 p-8 rounded-xl hover:bg-surface hover:border-secondary/30 transition-colors group">
                 <Cpu className="text-slate-500 group-hover:text-secondary mb-6 w-10 h-10 transition-colors" />
                 <h3 className="text-xl font-headline font-bold text-white uppercase tracking-tight mb-4">Residential Upgrades</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">Service work, renovations, lighting, garage power, and home electrical improvements handled with careful planning.</p>
+                <p className="text-sm text-slate-400 leading-relaxed">Service work, renovations, smart homes, generators, surge protection, and home electrical improvements handled with careful planning.</p>
               </div>
               <div className="bg-surface/80 border border-white/5 p-8 rounded-xl hover:bg-surface hover:border-secondary/30 transition-colors group">
                 <ShieldCheck className="text-slate-500 group-hover:text-secondary mb-6 w-10 h-10 transition-colors" />
                 <h3 className="text-xl font-headline font-bold text-white uppercase tracking-tight mb-4">Agricultural Power</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">Electrical support for feed mills, seed plants, rural properties, and farm operations that can’t afford unreliable systems.</p>
+                <p className="text-sm text-slate-400 leading-relaxed">Electrical support for farms, rural properties, outbuildings, and agricultural operations that can’t afford unreliable systems.</p>
               </div>
               <div className="bg-surface/80 border border-white/5 p-8 rounded-xl hover:bg-surface hover:border-secondary/30 transition-colors group">
                 <Lightbulb className="text-slate-500 group-hover:text-secondary mb-6 w-10 h-10 transition-colors" />
                 <h3 className="text-xl font-headline font-bold text-white uppercase tracking-tight mb-4">Design-Build Support</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">New builds, expansions, and practical electrical planning shaped around how the finished space will really be used.</p>
+                <p className="text-sm text-slate-400 leading-relaxed">Design builds, project budgeting, project management, and practical planning shaped around how the finished space will really be used.</p>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export function ServicesPage() {
             <div className="order-1 lg:order-2">
               <h2 className="font-headline text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tighter">Maintenance &amp; Emergency Support</h2>
               <p className="text-slate-400 text-lg mb-10 leading-relaxed">
-                Banda Electric supports clients after installation too, with preventative maintenance, quick turnaround on urgent issues, and practical diagnostics that keep systems online.
+                JA Electric supports clients after installation too, with maintenance, 24-hour service, infra-red scanning, underground cable locating, and practical diagnostics that keep systems online.
               </p>
 
               <div className="space-y-8">
